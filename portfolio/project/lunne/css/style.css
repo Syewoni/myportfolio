@@ -37,6 +37,19 @@ nav {
     top: 0;
 }
 
+nav:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+nav:hover #menu>li>a {
+    color: #000;
+}
+
+nav:hover #login>li>a {
+    color: #000;
+}
+
 nav img {
     width: 5%;
 }
