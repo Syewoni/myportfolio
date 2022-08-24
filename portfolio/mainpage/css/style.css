@@ -1,0 +1,490 @@
+@charset "utf-8";
+
+
+body {
+ font-family: 'NanumSquare';
+}
+a {
+    color: #000;
+}
+header {
+    background-color: #e1dfdd;
+    font-family: "PP Neue Montreal";
+    text-transform: uppercase;
+    padding: 0 150px;
+}
+
+header h2 {
+  font-size: 8rem;
+}
+
+header h2 span {
+  display: block;
+}
+
+header h2:first-of-type {
+  padding-top: 80px;
+}
+
+.header_txt {
+  font-size: 1.3rem;
+  margin-top: 40px;
+  padding-left: 10px;
+}
+
+.header_txt p {
+  margin: 10px 0;
+}
+
+.header_txt p:last-of-type {
+  font-family: "NanumSquare";
+  font-size: 1.3rem;
+}
+
+header h2:last-of-type {
+  float: right;
+  margin-top: 50px;
+}
+
+/* 메뉴 */
+nav {
+  position: fixed;
+  top: 0;
+  right: 0px;
+  z-index: 1;
+}
+
+nav #gnb {
+  text-transform: capitalize;
+  display: flex;
+  justify-content: flex-end;
+  padding: 25px 30px;
+}
+
+nav #gnb a {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  font-size: 1.7rem;
+  padding: 0 7px;
+  position: relative;
+}
+
+nav #gnb li a:after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background-color: #000;
+  position: absolute;
+  bottom: 0;
+  transition: 1s;
+}
+
+nav #gnb li:nth-child(1) a:after {
+  content: "";
+  /* width: 4.3vw; */
+  left: 2px;
+}
+
+nav #gnb li:nth-child(2) a:after {
+  content: "";
+  /* width: 4.5vw; */
+  left: 8px;
+}
+
+nav #gnb li:nth-child(3) a:after {
+  content: "";
+  /* width: 4.8vw; */
+  left: 10px;
+}
+
+nav #gnb li:nth-child(1):hover a:after {
+  width: 4.3vw;
+}
+
+nav #gnb li:nth-child(2):hover a:after {
+  width: 4.5vw;
+}
+
+nav #gnb li:nth-child(3):hover a:after {
+  width: 4.8vw;
+}
+
+.scroll {
+  display: flex;
+  margin: 230px 0 0 20px;
+}
+
+.scroll img {
+  width: 120px;
+  margin-right: 50px;
+  animation: ani_1 1.5s linear infinite alternate-reverse;
+}
+
+/* 硫붿씤?섏씠吏 ?붿궡???좊땲硫붿씠??*/
+@keyframes ani_1 {
+  100% {
+    transform: translateY(30px);
+  }
+}
+
+.scroll p {
+  margin-top: 15px;
+}
+
+.scroll p span {
+  display: block;
+  padding: 5px 0;
+  font-size: 24px;
+}
+
+/* about, project */
+main {
+  padding: 250px 150px 0;
+  background-color: #e1dfdd;
+}
+
+#about {
+  padding-top: 50px;
+  width: 100%;
+}
+
+.about_info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.txt {
+  font-family: "PP Neue Montreal";
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.txt span:first-child {
+  padding-right: 10px;
+}
+
+.about_can {
+  margin-top: 200px;
+  font-size: 1.25rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.about_can #about_box1 h3 {
+  padding-top: 40px;
+  /* width: 0%; */
+}
+
+#about h4 span {
+  display: block;
+}
+
+#about p span {
+  display: block;
+  font-size: 1.25rem;
+  padding-bottom: 5px;
+}
+
+#about .about_can h3 {
+  font-size: 5.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-right: 300px;
+}
+
+#about_wrapper {
+  /* width: 60%; */
+}
+
+#about .about_can h3 span {
+  display: block;
+}
+
+.about_can .skill {
+  padding: 60px 0;
+  display: flex;
+  text-transform: uppercase;
+}
+
+.about_can .skill p span {
+  text-transform: none;
+}
+
+.about_can .skill h4 {
+  padding-right: 80px;
+}
+
+.about_can #html h4 {
+  padding-right: 95px;
+}
+
+.about_can #js h4 {
+  padding-right: 110px;
+}
+
+.about_can #xd h4 {
+  padding-right: 130px;
+}
+
+.about_can #git h4 {
+  padding-right: 160px;
+}
+
+/* 프로젝트 */
+#project {
+  margin: 250px 0 0;
+  padding-top: 50px;
+  padding-bottom: 250px;
+}
+
+#project .sub_title {
+  margin-bottom: 200px;
+}
+
+#project .sub_title {
+  display: flex;
+  justify-content: space-between;
+}
+
+#project_list {
+  margin-left: 60px;
+}
+
+#project_list .contents {
+  width: 60%;
+  margin: 35px 0;
+  position: relative;
+  border-bottom: 1px solid #000;
+}
+
+#project_list .contents::after {
+  content: "";
+  width: 0px;
+  height: 1px;
+  background-color: #000;
+  position: absolute;
+  bottom: 0;
+  transition: 1s;
+}
+
+#project_list .contents:hover::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+}
+
+.contents .intro {
+  /* width: 80%; */
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  /* padding: 0 40pxa; */
+  position: relative;
+}
+
+.contents .intro span {
+  font-style: italic;
+  font-size: 1.8rem;
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+
+.contents .intro>p {
+  position: absolute;
+  bottom: -20px;
+  right: 10px;
+}
+
+.contents .contents_item {
+  /* width: 100%; */
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  /* padding: 0 40px; */
+}
+
+.contents a:hover .intro span,
+.contents a:hover .contents_item p {
+  /* color: #da7f81; */
+}
+
+.contents .contents_item p {
+  font-family: "PP Neue Montreal";
+  font-size: 3.75rem;
+  text-transform: uppercase;
+  margin-bottom: 35px;
+  transition: 0.5s;
+}
+
+.contents_item .tag {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.contents_item .tag span {
+  text-transform: uppercase;
+  box-sizing: border-box;
+  font-size: 16px;
+  height: 37px;
+  /* width: 90%; */
+  line-height: 30px;
+  border: 1px solid #303030;
+  border-radius: 5px;
+  margin: 0 5px;
+  padding: 5px 10px;
+}
+
+.contents_item .tag span:hover {
+  background-color: #303030;
+  color: #e1dfdd;
+}
+
+#project .phone {
+  width: 20%;
+  text-indent: -9999px;
+  /* border: 1px solid #000; */
+  float: right;
+  margin-right: 100px;
+  position: sticky;
+  top: 0;
+}
+
+/* contact */
+footer {
+  padding: 60px 150px 40px;
+  background-color: #303030;
+  color: #e1dfdd;
+  height: 100vh;
+}
+
+.contact_wrapper {
+  position: relative;
+}
+
+.contact_info {
+  text-transform: capitalize;
+  margin-top: 100px;
+  position: absolute;
+  right: 100px;
+}
+
+.contact_info h5 {
+  font-size: 22px;
+  /* padding-bottom: 30px; */
+}
+
+.contact_info #profile,
+.contact_info #ex {
+  padding: 30px 0 60px 0;
+}
+
+.contact_info ul li {
+  padding: 8px 0;
+}
+
+#profile li:first-child span {
+  padding-left: 110px;
+}
+
+#profile li:last-child span {
+  padding-left: 117px;
+}
+
+#ex li span {
+  padding-left: 50px;
+}
+
+#ex li:first-child span {
+  padding-left: 147px;
+}
+
+.contact {
+  margin-top: 550px;
+  padding: 0 30px;
+  position: relative;
+}
+
+.contact p {
+  font-size: 1.25rem;
+}
+
+.contact .txt {
+  display: inline-block;
+  text-transform: lowercase;
+  font-size: 80px;
+}
+.contact .txt a {
+    color: #e1dfdd;
+}
+.contact .txt::after {
+  content: "";
+  display: block;
+  background-color: #e1dfdd;
+  width: 0;
+  height: 6px;
+  position: absolute;
+  bottom: 0;
+  transition: 1s;
+}
+
+.contact .txt:hover::after {
+  width: 38vw;
+}
+
+.contact_bottom {
+  font-size: 1.4rem;
+  margin-top: 120px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact_bottom a {
+  text-transform: uppercase;
+  color: #e1dfdd;
+}
+
+.contact_bottom #top {
+  transition: 0.3s;
+}
+
+
+/* 마우스 커서 */
+/* .cursor {
+  display: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #000;
+
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 10000;
+
+} */
+
+.mouse {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 10%;
+  left: 10%;
+  border: 2px solid #000;
+  /* background-color: #F39820; */
+  /* border: 2.5px solid #F39820; */
+  border-radius: 50%;
+  z-index: 1000;
+}
+
+@keyframes cursor {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.text {
+  display: inline-block;
+  border-right: 3px solid black;
+  animation: cursor 0.4s ease infinite;
+}

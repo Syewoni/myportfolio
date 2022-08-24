@@ -1,0 +1,14 @@
+@charset "utf-8";
+
+@font-face {
+  font-family: "Pretendard Valiable";
+
+  src: local(PretendardValiable),
+    url(../fonts/PretendardVariable.woff2) format("woff2-variations"),
+    url(../fonts/PretendardVariable.woff) format("woff-variations");
+
+  font-style: normal;
+  font-weight: 45 920;
+
+  font-display: swap;
+}

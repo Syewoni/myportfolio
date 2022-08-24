@@ -1,0 +1,350 @@
+@charset "utf-8";
+body {
+  font-family: "Pretendard Valiable", "맑은 고딕", 돋움, sans-serif;
+  font-size: 16px;
+  text-align: center;
+  width: 100%;
+  margin: 0;
+}
+a {
+  color: #000;
+}
+
+/* 헤더 */
+header .title {
+  padding: 15px 0;
+  position: relative;
+}
+header .title > a:nth-child(2) {
+  position: absolute;
+  right: 5px;
+}
+header .title > a:nth-child(2) img {
+  width: 55%;
+}
+
+/* 메뉴 */
+nav #menu {
+  padding-bottom: 10px;
+  width: 100%;
+}
+nav #menu li {
+  display: inline-block;
+  width: 15%;
+  background-color: #fff;
+  position: relative;
+}
+nav #menu li a {
+  font-weight: bold;
+  font-size: 14px;
+}
+nav #menu li a img {
+  width: 80%;
+  vertical-align: baseline;
+}
+nav #menu li:last-child a img {
+  margin-bottom: 3px;
+}
+
+/* 소메뉴 */
+nav #menu li .sub_menu {
+  display: none;
+}
+
+/* 메인이미지 */
+main {
+  /* overflow: hidden; */
+}
+/* 컨텐츠 공통 */
+main .sub_title {
+  padding: 0 23px;
+}
+main .sub_title .more {
+  position: relative;
+  left: 135px;
+  margin-bottom: 10px;
+}
+main .sub_title .more a {
+  color: #000;
+  line-height: 1.5;
+}
+main .sub_title .more a img {
+  width: 25px;
+}
+main .sub_title .bold {
+  padding: 15px 0 10px;
+  font-size: 17px;
+  font-weight: bold;
+}
+main .sub_title .color {
+  padding-bottom: 50px;
+  color: #939393;
+  font-size: 15px;
+  margin: 0;
+}
+
+/* 컨텐츠 제목 */
+main .sub_title > p {
+  color: #373737;
+  margin-top: 75px;
+}
+main .sub_title h3 {
+  font-size: 25px;
+  font-weight: bold;
+  padding-top: 15px;
+}
+main .sub_title .border {
+  text-indent: -9999px;
+  border-top: 2px solid #ff5519;
+  width: 60px;
+  margin: 15px auto;
+}
+
+/* 캐러셀 버튼 */
+main #btns {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+main #btns li {
+  cursor: pointer;
+}
+
+/* 이벤트 배너 */
+main .event {
+  display: none;
+}
+
+/* 제품소개 */
+main #product_wrapper {
+  position: relative;
+  width: 120%;
+}
+main .icon_wrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: center; */
+}
+main .icon_wrapper .icon_box {
+  padding: 0 10px;
+}
+#product_wrapper .icon_wrapper .product img {
+  background-color: #f3f3f3;
+  width: 90px;
+  border-radius: 10px;
+  padding: 5px;
+}
+main .icon_wrapper .icon_box a .product p {
+  font-size: 14px;
+  padding-top: 5px;
+}
+main .icon_wrapper .icon_box a p {
+  font-size: 18px;
+}
+/* main .icon_wrapper #icon4,
+main .icon_wrapper #icon5,
+main .icon_wrapper #icon6 {
+  padding-top: 25px;
+}
+main .icon_wrapper #icon7_box,
+main .icon_wrapper #icon8_box {
+  display: none;
+} */
+
+/* 전문가 시공사례 */
+main .expert {
+  margin: 0;
+}
+main .expert .expert_img {
+  width: 85vw;
+  height: 40vh;
+  text-indent: -9999px;
+  margin: 0 auto;
+}
+main .expert #expert_box1 .expert_img {
+  background: url(../images/main-img01.jpg) no-repeat 100% / cover;
+  background-position: 50% 80%;
+}
+main .expert #expert_box2 .expert_img {
+  background: url(../images/main-img02.jpg) no-repeat 100% / cover;
+  background-position: 50% 70%;
+}
+main .expert #expert_box3 .expert_img {
+  background: url(../images/main-img03.jpg) no-repeat 100% / cover;
+  background-position: 50% 65%;
+}
+main .expert #expert_box3 .color {
+  padding: 0;
+}
+
+/* 라이프 매거진 */
+main .magazine .magazine_img {
+  width: 85vw;
+  height: 40vh;
+  text-indent: -9999px;
+  margin: 0 auto;
+}
+main .magazine #magazine_box1 .magazine_img {
+  background: url(../images/main-img04.jpg) no-repeat 100% / cover;
+  background-position: 50% 65%;
+}
+main .magazine #magazine_box2 .magazine_img {
+  background: url(../images/main-img05.jpg) no-repeat 100% / cover;
+  background-position: 70% 60%;
+}
+main .magazine #magazine_box3 .magazine_img {
+  background: url(../images/main-img06.jpg) no-repeat 100% / cover;
+  background-position: 50% 65%;
+}
+main .magazine #magazine_box4 .magazine_img {
+  background: url(../images/main-img07.jpg) no-repeat 100% / cover;
+  background-position: 60% 65%;
+}
+main .magazine #magazine_box5 .magazine_img {
+  background: url(../images/main-img08.jpg) no-repeat 100% / cover;
+  background-position: 50% 65%;
+}
+main .magazine #magazine_box6 .magazine_img {
+  background: url(../images/main-img09.jpg) no-repeat 100% / cover;
+  background-position: 50% 65%;
+}
+main .magazine #magazine_box7 .magazine_img {
+  background: url(../images/main-img10.jpg) no-repeat 100% / cover;
+  background-position: 62% 65%;
+}
+main .magazine #magazine_box8 .magazine_img {
+  background: url(../images/main-img11.jpg) no-repeat 100% / cover;
+  background-position: 50% 65%;
+}
+main .magazine #magazine_box8 .color {
+  padding: 0;
+}
+
+/* 론첼 배너 */
+main .lonchel {
+  display: none;
+}
+
+/* 뉴스 캐러셀 버튼 */
+main .hausys_box {
+  position: relative;
+}
+main .bottom_left,
+main .bottom_right {
+  width: 37px;
+  background-color: #e7e7e7;
+  border-radius: 50%;
+}
+main .hausys_box .btn .bottom_left {
+  position: absolute;
+  top: 170px;
+  left: -10px;
+}
+main .hausys_box .btn .bottom_right {
+  margin-left: auto;
+  position: absolute;
+  top: 170px;
+  right: -10px;
+}
+main #news .news_wrapper > .more {
+  display: none;
+}
+
+/* 하우시스 뉴스 */
+main #news .news_wrapper #news_box1 {
+  margin-top: 50px;
+}
+main .hausys_news .news_img {
+  width: 85vw;
+  height: 40vh;
+  text-indent: -9999px;
+  margin: 0 auto;
+}
+main .hausys_news #news_box1 .news_img {
+  background: url(../images/news-img1.jpg) no-repeat 100% / cover;
+  background-position: 50% 65%;
+}
+main #news_wrapper .more,
+main .hausys_box #news_box2,
+main .hausys_box #news_box3,
+main .hausys_box #news_box4 {
+  display: none;
+}
+main .hausys_news .color {
+  color: #6f6f6f;
+  width: 300px;
+  margin: 0 auto;
+}
+
+/* footer */
+footer {
+  text-align: center;
+  font-size: 14px;
+}
+footer .contact {
+  background-color: #1c1c1c;
+  color: #939393;
+}
+footer .contact a {
+  color: #939393;
+}
+footer .contact img {
+  width: 40%;
+  padding: 50px 0 25px;
+}
+
+/* 이용약관 */
+footer .contact #footer_gnb {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+footer .contact #footer_gnb a {
+  display: block;
+}
+footer .contact #footer_gnb li {
+  align-items: center;
+  padding: 0 12px;
+  border-right: 1px solid #c1c1c1;
+}
+footer .contact #footer_gnb li:last-child {
+  border: none;
+}
+
+/* 주소 */
+footer .num address {
+  font-style: normal;
+  padding: 5px 0;
+}
+footer .num p {
+  padding: 5px 0;
+}
+footer .num p:last-child {
+  padding-bottom: 20px;
+}
+
+/* 바로가기 버튼 */
+footer .shortcut {
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+footer .shortcut p {
+  padding-bottom: 20px;
+}
+footer .shortcut p:last-child {
+  width: 250px;
+  height: 54px;
+  border: 1px solid #939393;
+  margin: 0 auto;
+  line-height: 3rem;
+  font-size: 22px;
+}
+
+footer .copyright {
+  background-color: #141414;
+  color: #6f6f6f;
+  font-size: 11px;
+  padding: 15px 0;
+  text-transform: uppercase;
+}
