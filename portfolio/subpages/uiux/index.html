@@ -12,6 +12,8 @@
 
  <!-- mini reset -->
  <link rel="stylesheet" href="../../../common/minireset.css">
+ <!-- font.css -->
+ <link rel="stylesheet" href="../../mainpage/css/fonts.css">
  <!-- style.css -->
  <link rel="stylesheet" href="./style.css">
 </head>
@@ -24,55 +26,61 @@
             </ul>
         </nav>
         <img src="./images/main.png" alt="맥 딜리버리 메인화면">
-        <h1>Application UX / UI Renewal<br>Mc Delivery</h1>
-        <p>
-            <span>더 쉽고, 더 빠르게 터치 몇번으로 내가 좋아하는 맥도날드 메뉴를</span>
-            <span>바로 배달받을 수 있는 맥도날드 공식 배달 앱.</span>
-        </p>
-        <ul id="infor">
-            <li>
-                <span>Team</span>
-                <span>핫브레이크조</span>
-            </li>
-            <li>
-                <span>Member</span>
-                <span>강준모, 김진주, 신예원(Leader)</span>
-            </li>
-            <li>
-                <span>Period</span>
-                <span>2022.04.29 ~ 06.28</span>
-            </li>
-        </ul>
+        <div class="header_txt">
+            <h1>Application UX / UI Renewal<br>Mc Delivery</h1>
+            <p>
+                <span>더 쉽고, 더 빠르게 터치 몇번으로 내가 좋아하는 맥도날드 메뉴를</span>
+                <span>바로 배달받을 수 있는 맥도날드 공식 배달 앱.</span>
+            </p>
+            <ul id="infor">
+                <li>
+                    <span>Team</span>
+                    <span>핫브레이크조</span>
+                </li>
+                <li>
+                    <span>Member</span>
+                    <span>강준모, 김진주, 신예원(Leader)</span>
+                </li>
+                <li>
+                    <span>Period</span>
+                    <span>2022.04.29 ~ 06.28</span>
+                </li>
+            </ul>
+        </div>
+        
     </header>
     <main>
         <!-- project overview -->
         <section id="overview">
             <h2>Overview</h2>
             <!-- 프로젝트 목표 -->
-            <div class="goal">
-                <h3>Project Goals</h3>
-                <h4>모바일 어플리케이션 '맥 딜리버리' UX/UI 리디자인</h4>
-                <p>
-                    <span>어려운 주문과정 및 편의기능의 부재 등으로 사용자가 불편함을 느낄 수 있는 요소들이 있었습니다.</span>
-                    <span>기존 어플의 문제점을 분석하여 누구나 편리하게 사용할 수 있도록 리뉴얼 하였습니다.</span>
-                </p>
+            <div class="wrapper">
+                <div class="goal">
+                    <h3>Project Goals</h3>
+                    <h4>모바일 어플리케이션 '맥 딜리버리' UX/UI 리디자인</h4>
+                    <p>
+                        <span>어려운 주문과정 및 편의기능의 부재 등으로 사용자가 불편함을 느낄 수 있는 요소들이 있었습니다.</span>
+                        <span>기존 어플의 문제점을 분석하여 누구나 편리하게 사용할 수 있도록 리뉴얼 하였습니다.</span>
+                    </p>
+                </div>
+                <!-- 프로젝트 타임라인 -->
+                <div id="timeline">
+                    <h3>Project Timeline</h3>
+                    <ul id="list">
+                        <li>어플 선정</li>
+                        <li>자료 리서치</li>
+                        <li>사용자 분석 및 기존 UI/UX 분석</li>
+                        <li>페르소나 설정</li>
+                        <li>UX 비전 설정</li>
+                        <li>IA 설계</li>
+                        <li>스타일 가이드 제작</li>
+                        <li>와이어 프레임 제작</li>
+                        <li>화면 디자인</li>
+                        <li>프로토타입 제작</li>
+                    </ul>
+                </div>
             </div>
-            <!-- 프로젝트 타임라인 -->
-            <div id="timeline">
-                <h3>Project Timeline</h3>
-                <ul id="list">
-                    <li>어플 선정</li>
-                    <li>자료 리서치</li>
-                    <li>사용자 분석 및 기존 UI/UX 분석</li>
-                    <li>페르소나 설정</li>
-                    <li>UX 비전 설정</li>
-                    <li>IA 설계</li>
-                    <li>스타일 가이드 제작</li>
-                    <li>와이어 프레임 제작</li>
-                    <li>화면 디자인</li>
-                    <li>프로토타입 제작</li>
-                </ul>
-            </div>
+           
         </section>
 
         <!-- 진행한 업무 -->
@@ -80,11 +88,11 @@
             <h2>Charged<br>Task</h2>
             <div class="role">
                 <h3>My Role</h3>
-                <div class="pl">
+                <div class="task_box">
                     <p>팀 리더</p>
                     <p>팀 내 의견 조율, 전체적인 자료 정리, PT 자료 제작</p>
                 </div>
-                <div class="research">
+                <div class="task_box">
                     <p>자료 리서치</p>
                     <div class="research_txt">
                         <p>앱 분석 및 사용자 분석: 앱 리서치를 통한 장, 단점 분석</p>
@@ -93,10 +101,10 @@
                         <p>경쟁 앱 분석: 사용량이 많은 배달 앱 리서치를 통한 장, 단점 분석</p>
                     </div>
                 </div>
-                <div class="persona">
+                <div class="task_box">
                     <p>페르소나 설정</p>
                     <div class="persona_txt">
-                        <p>페르소나 설정(바쁜 회사일로 점심을 해결하기 어려운 30대 직장인)</p>
+                        <p>페르소나 설정 (바쁜 회사일로 점심을 해결하기 어려운 30대 직장인)</p>
                         <p>페르소나를 바탕으로 행동패턴 제작</p>
                         <p>해당 어플을 사용할 때의 워크플로우 제작</p>
                     </div>
@@ -136,25 +144,29 @@
                 </div>
                 <div class="color">
                     <h3>Color</h3>
-                    <div class="color_box">
-                        <p>#E02421</p>
+                    <div class="color_txt">
+                        <div class="color_box">
+                            <p>#E02421</p>
+                        </div>
+                        <div class="color_box">
+                            <p>#FDC10B</p>
+                        </div>
+                        <div class="color_box">
+                            <p>#707070</p>
+                        </div>
+                        <div class="color_box">
+                            <p>#FFFFFF</p>
+                        </div>
                     </div>
-                    <div class="color_box">
-                        <p>#FDC10B</p>
-                    </div>
-                    <div class="color_box">
-                        <p>#707070</p>
-                    </div>
-                    <div class="color_box">
-                        <p>#FFFFFF</p>
-                    </div>
+                    
                 </div>
                 <div class="font">
+                    <h3>Typography</h3>
                     <div class="ko">
                         <p>한국어</p>
                         <div class="name">
-                            <p>Pretendard</p>
-                            <ul id="size">
+                            <p class="typo">Pretendard</p>
+                            <ul class="size">
                                 <li>
                                     <span>맛있는 소비</span>
                                     <span>Bold</span>
@@ -169,8 +181,8 @@
                     <div class="en">
                         <p>영어</p>
                         <div class="name">
-                            <p>Roboto</p>
-                            <ul id="size">
+                            <p class="typo">Roboto</p>
+                            <ul class="size">
                                 <li>
                                     <span>맛있는 소비</span>
                                     <span>Bold</span>
@@ -209,47 +221,56 @@
         <!-- 평가 -->
         <section id="progress">
             <h2>Progress<br>Evaluation</h2>
-            <div class="good">
-                <h3>Good Things</h3>
-                <p>
-                    <span>팀원들이 가진 강점이 달라 담당 업무를 나누어 잘 수행할 수 있었습니다.</span>
-                    <span>리디자인 하는 과정에서 팀원 모두가 다양한 의견을 적극적으로 제시하며</span>
-                    <span>더 나은 방안을 모색할 수 있었고, 팀원간의 수많은 회의를 통해 의견을 조율하였습니다.</span>
-                    <span>팀원과의 의견 조율을 통해 편의기능을 추가하여 보다 편리하게 주문할 수 있도록 개선하였습니다.</span>
-                </p>
-                <p>
-                    <span>팀원간의 원활한 소통을 통해 아이디어와 피드백을 제시하고 이를 수용하며</span>
-                    <span>좋은 결과물을 완성할 수 있었습니다.</span>
-                </p>
+            <div class="progress_txt">
+                <div class="good">
+                    <h3>Good Things</h3>
+                    <p>
+                        <span>팀원들이 가진 강점이 달라 담당 업무를 나누어 잘 수행할 수 있었습니다.</span>
+                        <span>리디자인 하는 과정에서 팀원 모두가 다양한 의견을 적극적으로 제시하며</span>
+                        <span>더 나은 방안을 모색할 수 있었고, 팀원간의 수많은 회의를 통해 의견을 조율하였습니다.</span>
+                        <span>팀원과의 의견 조율을 통해 편의기능을 추가하여 보다 편리하게 주문할 수 있도록 개선하였습니다.</span>
+                    </p>
+                    <p>
+                        <span>팀원간의 원활한 소통을 통해 아이디어와 피드백을 제시하고 이를 수용하며</span>
+                        <span>좋은 결과물을 완성할 수 있었습니다.</span>
+                    </p>
+                </div>
+                <div class="desired">
+                    <h3>Desired Things</h3>
+                    <p>
+                        <span>한 페이지를 공동작업으로 진행하며 괜찮은 부분을 붙여 완성하다보니 오랜 시간이 소요되었습니다.</span>
+                        <span>개선점: 담당업무를 분담하였고, 제작한 결과물은 피드백을 주고받으며 완성하였습니다.</span>
+                    </p>
+                </div>
             </div>
-            <div class="desired">
-                <p>
-                    <span>한 페이지를 공동작업으로 진행하며 괜찮은 부분을 붙여 완성하다보니 오랜 시간이 소요되었습니다.</span>
-                    <span>개선점: 담당업무를 분담하였고, 제작한 결과물은 피드백을 주고받으며 완성하였습니다.</span>
-                </p>
-            </div>
+            
         </section>
     </main>
     <footer>
         <div id="review">  
-            <h2>Review</h2>
-            <div class="review_txt">
-                <p>
-                    <span>팀장이라는 역할을 담당해본 첫 팀 프로젝트였다. 팀 프로젝트와 팀장 모두 처음 경험하다보니</span>
-                    <span>부족한 점이 많이 있었던 것 같아 아쉬움이 남기도 하지만, 최선을 다해 프로젝트에 참여했던 것 같다.</span>
-                </p>
-                <p>
-                    <span>팀원간의 여러 아이디어를 주고 받으며 작업이 원활하게 이루어졌던 것 같다. 작업물을 완성하고 나서 팀원 간에</span>
-                    <span>피드백을 주고 받으며 더 좋은 결과물을 완성할 수 있도록 개선할 수 있었다. 또한 프로젝트를 진행하며 디자인에</span>
-                    <span>대해 조금 더 알아갈 수 있는 기회가 될 수 있었던 것 같다.</span>
-                </p>
-                <p>
-                    <span>팀원 각각이 가진 능력이 달라 역할을 분배하여 과제를 수행해나갈 수 있었다. 팀 프로젝트를 진행하며</span>
-                    <span>소통의 중요성을 알 수 있었고, 어떻게 팀 프로젝트가 이루어지는 지 경험해볼 수 있는 뜻 깊은 시간이었던 것  같다.</span>
-                </p>
+            <div class="review_box">
+                <h2>Review</h2>
+                <div class="review_txt">
+                    <p>
+                        <span>리더라는 역할을 담당해본 첫 팀 프로젝트였다. 팀 프로젝트와 팀 리더 모두 처음 경험하다보니</span>
+                        <span>리더로써 부족한 점이 많이 있었던 것 같아 아쉬움이 남기도 하지만, 최선을 다해 프로젝트에 참여했던 것 같다.</span>
+                    </p>
+                    <p>
+                        <span>팀원간의 여러 아이디어를 주고 받으며 작업이 원활하게 이루어졌던 것 같다. 작업물을 완성하고 나서 팀원 간에</span>
+                        <span>피드백을 주고 받으며 더 좋은 결과물을 완성할 수 있도록 개선할 수 있었다. 또한 프로젝트를 진행하며 디자인에</span>
+                        <span>대해 조금 더 알아갈 수 있는 기회가 될 수 있었던 것 같다.</span>
+                    </p>
+                    <p>
+                        <span>팀원 각각이 가진 능력이 달라 역할을 분배하여 과제를 수행해나갈 수 있었다. 팀 프로젝트를 진행하며</span>
+                        <span>소통의 중요성을 알 수 있었고, 어떻게 팀 프로젝트가 이루어지는 지 경험해볼 수 있는 뜻 깊은 시간이었던 것  같다.</span>
+                    </p>
+                </div>
             </div>
-            <p><a href="#">View Prototype</a></p>
-            <p><a href="#">View Project</a></p>
+           
+            <div class="view">
+                <p><a href="#">View Prototype</a></p>
+                <p><a href="#">View Project</a></p>
+            </div>
         </div>
     </footer>
 </body>
