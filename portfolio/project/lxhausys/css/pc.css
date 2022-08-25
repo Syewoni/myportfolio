@@ -1,7 +1,11 @@
 @charset "utf-8";
 
 @media (min-width: 1280px) {
-
+html,body {
+  height: 100%;
+  position: relative;
+}
+b
   /* 메뉴 */
   header .top {
     padding: 25px 0;
@@ -18,14 +22,17 @@
   }
 
   header .top .title a:last-child img {
-    width: 60%;
+    /* width: 60%;
     position: relative;
     bottom: 15px;
-    right: 18em;
+    right: 18em; */
+    display: none;
   }
-
+  nav {
+    height: 40px;
+  }
   nav #menu {
-    width: 60%;
+    width: 60%; 
     position: absolute;
     right: 180px;
     top: 30px;
@@ -86,19 +93,19 @@
   }
 
   /* 메인 이미지 */
-
   #title_img {
     width: 100%;
-    height: 90vh;
+    height: 70vh;
+    position: relative;
   }
 
   #title_img #title {
-    height: 100%;
+    height: 70vh;
   }
 
   #title_img #title .slide_item {
     width: 100%;
-    height: 100%;
+    height: 70vh;
     position: absolute;
     background: no-repeat 50% / cover;
     transition: 1s;
@@ -140,6 +147,10 @@
   }
 
   /* 컨텐츠 공통 */
+  main {
+    width: 100%;
+  }
+
   main .sub_title {
     padding-top: 150px;
   }
@@ -179,97 +190,83 @@
   }
 
   /* 제품 소개 */
-  /* #product_wrapper {
-    margin: 0 auto;
-  }
+  .swiper {
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
 
-  main .icon_wrapper {
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* height: calc((100% - 30px) / 2) !important; */
 
-    width: 90vw;
-  }
-
-  main .icon_wrapper .icon_swipper {
+    /* Center slide text vertically */
+   /*  display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center; */
+}
+  main .swiper .swiper-wrapper {
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-  } */
-  .icon_wrapper {
-    position: relative;
-    max-width: 1180px;
-    margin: 20px auto 0;
-    padding: 0 50px;
   }
 
-  .icon_wrapper .icon_inner {
-    overflow: hidden;
-    margin-right: -1.333%;
-  }
-
-  .icon_wrapper .swiper-slide {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .swiper-button-prev,
-  .swiper-button-next {
-    position: absolute;
-    top: 50%;
-    width: 35px;
-    height: 35px;
-  }
-
-  .swiper-button-prev {
-    left: 0;
-    transform:
-      /* rotateY(180deg)  */
-      translate(0, -50%);
-  }
-
-  .swiper-button-next {
-    right: 0;
-    transform: translate(0, -50%);
-  }
-
-  main .icon_wrapper .icon_box {
+  main .swiper-wrapper .swiper-slide {
     padding: 0 40px;
+
   }
 
-  main .icon_wrapper .icon_box a .product p {
+  main .swiper-wrapper .swiper-slide a .product p {
     font-size: 20px;
     padding: 15px;
   }
 
-  main .icon_wrapper .icon_box a .product {
+  main .swiper-wrapper .swiper-slide a .product {
     background-color: #f3f3f3;
     width: 200px;
     height: 140px;
     margin: 10px;
     border-radius: 15px;
-  }
+  } 
 
-  #product_wrapper .icon_wrapper .product img {
+  #product_wrapper .swiper-wrapper .product img {
     width: 130px;
   }
 
-  /*main .icon_wrapper .icon_box a #icon1 p,
-  main .icon_wrapper .icon_box a #icon2 p,
-  main .icon_wrapper .icon_box a #icon3 p,
-  main .icon_wrapper .icon_box a #icon4 p {
+  main .swiper-wrapper .swiper-slide a #icon1 p,
+  main .swiper-wrapper .swiper-slide a #icon2 p,
+  main .swiper-wrapper .swiper-slide a #icon3 p,
+  main .swiper-wrapper .swiper-slide a #icon4 p {
     margin-bottom: 65px;
   }
-  main .icon_wrapper #icon4,
-  main .icon_wrapper #icon5,
-  main .icon_wrapper #icon6 {
+
+  main .swiper-wrapper #icon4,
+  main .swiper-wrapper #icon5,
+  main .swiper-wrapper #icon6 {
     padding: 0;
   }
-  main .icon_wrapper #icon7_box,
-  main .icon_wrapper #icon8_box {
+
+  main .swiper-wrapper #icon7_box,
+  main .swiper-wrapper #icon8_box {
     display: block;
   }
- */
+
   /* 이벤트 배너 */
   main .event {
     display: block;
+    display: none;
     width: 100%;
     margin-top: 170px;
   }
