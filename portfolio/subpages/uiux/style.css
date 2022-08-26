@@ -1,341 +1,363 @@
 @charset "utf-8";
 
 body {
-    width: 100%;
-    font-family: "NanumSquare";
-    font-size: 18px;
+  width: 100%;
+  font-family: "NanumSquare";
+  font-size: 18px;
 }
 a {
-    color: inherit;
+  color: inherit;
 }
 span {
-    display: block;
+  display: block;
 }
 h2 {
-    font-family: "PP Neum Montreal";
-    font-size: 80px;
-    font-weight: bold;
+  font-family: "PP Neum Montreal";
+  font-size: 80px;
+  font-weight: bold;
+  color: #303030;
 }
 /* header 영역 */
 header {
-    width: 100%; /* height: 80vh; */
-    background-color: #303030;
-    color: #fff;
-    padding: 70px 150px;
-    position: relative;
-    overflow: hidden;
+  width: 100%; /* height: 80vh; */
+  background-color: #303030;
+  color: #fff;
+  padding: 70px 150px;
+  position: relative;
+  overflow: hidden;
 }
 nav #menu {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 header img {
-    width: 60vw;
-    position: absolute;
-    right: -160px; top: 150px;
+  width: 16vw;
+  position: absolute;
+  right: 13vw;
+  top: 18vh;
 }
 .header_txt {
-    padding-left: 150px;
-    padding-top: 150px;
+  padding-left: 150px;
+  padding-top: 150px;
 }
 .header_txt h1 {
-    font-family: "PP Neue Montreal";
-    font-size: 60px;
+  font-family: "PP Neue Montreal";
+  font-size: 60px;
 }
 .header_txt p {
-    padding-top: 50px;
-    padding-bottom: 100px;
-    line-height: 35px;
+  padding-top: 50px;
+  padding-bottom: 100px;
+  line-height: 35px;
 }
 .header_txt #infor {
-    width: 20vw;
+  width: 20vw;
 }
 .header_txt #infor li {
-    display: flex;;
-    padding: 15px 0;
+  display: flex;
+  padding: 15px 0;
 }
 .header_txt #infor li:first-child span:first-child {
-    padding-right: 79px;
+  padding-right: 79px;
 }
 .header_txt #infor li:nth-child(2) span:first-child {
-    padding-right: 55px;
+  padding-right: 55px;
 }
 .header_txt #infor li:nth-child(3) span:first-child {
-    padding-right: 70px;
+  padding-right: 70px;
 }
 
 /* main 영역 */
 main {
-    background-color: #E1DFDD;
-    padding: 150px 250px;
+  background-color: #e1dfdd;
+  padding: 150px 250px;
 }
 
 main h3 {
-    display: inline-block;
-    background-color: #F6F6F6;
-    font-size: 25px;
-    padding: 0 20px;
-    height: 45px;
-    line-height: 50px;
-    margin-bottom: 40px;
+  display: inline-block;
+  background-color: #f6f6f6;
+  font-size: 25px;
+  padding: 0 20px;
+  height: 45px;
+  line-height: 50px;
+  margin-bottom: 40px;
 }
 
 /* overview */
 #overview {
-    display: flex;
-    /* justify-content: space-between; */
+  display: flex;
+  align-items: flex-start;
+  /* justify-content: space-between; */
 }
+
 #overview .wrapper {
-    padding-left: 264px;
+  padding-left: 264px;
 }
 .wrapper .goal {
-    margin-top: 35px;
+  /* margin-top: 35px; */
 }
 .wrapper .goal h4 {
-    padding-bottom: 48px;
+  padding-bottom: 48px;
 }
 .wrapper .goal p {
-    padding-bottom: 140px;
+  padding-bottom: 140px;
 }
 .wrapper .goal p span {
-    padding: 5px 0;
+  padding: 5px 0;
 }
 #timeline #list {
-    list-style: circle;
+  list-style: circle;
 }
 #timeline #list li {
-    margin-left: 20px;
-    padding: 13px 0;
+  margin-left: 20px;
+  padding: 13px 0;
 }
 
 /* 역할분담 */
 #task {
-    margin-top: 211px;
-    display: flex;
-    /* justify-content: space-between */
+  margin-top: 211px;
+  display: flex;
+  /* justify-content: space-between */
 }
 #task .role {
-    padding-left: 292px;
+  padding-left: 292px;
 }
 
 /* 자료 리서치 */
 #task .role .task_box {
-    display: flex;
-    padding: 40px 0;
+  display: flex;
+  padding: 40px 0;
 }
 #task .task_box:nth-of-type(1) p:nth-child(1) {
-    padding-right: 130px;
+  padding-right: 130px;
 }
 #task .task_box:nth-of-type(2) p:nth-child(1) {
-    padding-right: 94px;
+  padding-right: 94px;
 }
 #task .task_box:nth-of-type(3) p:nth-child(1) {
-    padding-right: 76px;
+  padding-right: 76px;
 }
 #task .task_box .research_txt p {
-    padding: 20px 0;
+  padding: 20px 0;
 }
 #task .task_box .research_txt p:first-child {
-    padding-top: 0;
+  padding-top: 0;
 }
 
 /* 페르소나 설정 */
 #task .task_box .persona_txt p {
-    padding: 20px 0;
+  padding: 20px 0;
 }
 #task .task_box .persona_txt p:first-child {
-    padding-top: 0;
+  padding-top: 0;
 }
 
 /* ux vision */
 #vision {
-    display: flex;
-    align-items: center;
-    margin-top: 211px;
+  display: flex;
+  align-items: center;
+  margin-top: 211px;
 }
 #vision .vision_txt {
-    padding-left: 374px;
+  padding-left: 374px;
 }
 #vision .vision_txt h4 {
-    font-size: 30px;
-    padding-bottom: 56px;
+  font-size: 30px;
+  padding-bottom: 56px;
 }
 #vision .vision_txt p span {
-    padding: 5px 0;
+  padding: 5px 0;
 }
 
 /* 디자인 방향 */
 #design {
-    margin-top: 211px;
-    display: flex;
+  margin-top: 211px;
+  display: flex;
 }
 #design .design_txt {
-    margin-top: 45px;
-    padding-left: 333px;
+  margin-top: 45px;
+  padding-left: 333px;
 }
 #design .direction p span {
-    padding: 3px 0;
+  padding: 3px 0;
 }
 #design .design_txt .keyword {
-    display: flex;
-    padding-top: 66px;
+  display: flex;
+  padding-top: 66px;
 }
 #design .design_txt .keyword p {
-    line-height: 130px;
-    text-align: center;
-    width: 130px; height: 130px;
-    border-radius: 50%;
-    background-color: #303030;
-    color: #E1DFDD;
-    margin: 0 20px;
+  line-height: 130px;
+  text-align: center;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border: 2px solid #303030;
+  color: #303030;
+  font-size: 1.3rem;
+  margin: 0 20px;
 }
 #design .design_txt .keyword p:first-child {
-    margin-left: 0;
+  margin-left: 0;
+}
+#design .design_txt .keyword p:hover {
+  background-color: #303030;
+  color: #e1dfdd;
 }
 /* 컬러 */
 #design .design_txt .color {
-    padding-top: 147px;
+  padding-top: 147px;
 }
 #design .design_txt .color .color_txt {
-    display: flex;
+  display: flex;
 }
 #design .design_txt .color .color_box {
-    width: 216px; height: 150px;
-    position: relative;
+  width: 216px;
+  height: 150px;
+  position: relative;
 }
 #design .design_txt .color .color_box p {
-    position: absolute;
-    left: 28px; bottom: 13px;
-    color: #fff;
+  position: absolute;
+  left: 28px;
+  bottom: 13px;
+  color: #fff;
 }
 #design .design_txt .color .color_box:nth-of-type(1) {
-    background-color: #e02421;
+  background-color: #e02421;
 }
 #design .design_txt .color .color_box:nth-of-type(2) {
-    background-color: #fdc10b;
+  background-color: #fdc10b;
 }
 #design .design_txt .color .color_box:nth-of-type(3) {
-    background-color: #707070;
+  background-color: #707070;
 }
 #design .design_txt .color .color_box:nth-of-type(4) {
-    background-color: #fff;
+  background-color: #fff;
 }
 #design .design_txt .color .color_box:nth-of-type(4) p {
-    color: #000;
+  color: #000;
 }
 /* 폰트 */
 #design .font {
-    padding-top: 147px;
+  padding-top: 147px;
 }
 .font .name {
-    display: flex;
+  display: flex;
+  position: relative;
+}
+#design .font .size {
+  position: absolute;
+  top: -20px;
+  left: 300px;
 }
 .font .name .typo {
-    font-size: 35px;
-    font-weight: bold;
+  font-size: 35px;
+  font-weight: bold;
 }
-.font .ko  > p,
-.font .en  > p {
-    padding-bottom: 14px;
+.font .ko > p,
+.font .en > p {
+  padding-bottom: 14px;
 }
 .font .ko .typo {
-    padding-right: 99px;
+  padding-right: 99px;
 }
-.font .size li{
-    display: flex;
+.font .size li {
+  display: flex;
 }
 .font .size li span {
-    padding: 24px 0;
-    font-size: 25px;
+  padding: 24px 0;
+  font-size: 25px;
 }
 .font .size li:first-child {
-    font-weight: bold;
+  font-weight: bold;
 }
 .font .en {
-    padding-top: 95px;
+  padding-top: 155px;
 }
 .font .en .typo {
-    padding-right: 166px;
+  padding-right: 166px;
 }
 
 /* 프로토타입 */
 #type {
-    margin-top: 211px;
-    display: flex;
+  margin-top: 211px;
+  display: flex;
 }
 #type .type_box {
-    margin: 0 26px;
-    text-align: center;
+  margin: 0 26px;
+  text-align: center;
 }
 #type .type_box img {
-    width: 365px;
-    border-radius: 35px;
+  width: 365px;
+  border-radius: 35px;
 }
 #type .type_box p {
-    padding-top: 35px;
+  padding-top: 35px;
 }
 
 /* 평가 */
 #progress {
-    margin-top: 211px;
-    display: flex;
+  margin-top: 211px;
+  display: flex;
 }
 #progress .progress_txt {
-    padding-left: 216px;
+  padding-left: 216px;
 }
 #progress .progress_txt span {
-    padding: 5px 0;
+  padding: 5px 0;
 }
 #progress .progress_txt .good p:last-child {
-    padding-top: 50px;
+  padding-top: 50px;
 }
 #progress .desired {
-    margin-top: 160px;
+  margin-top: 160px;
 }
 #progress .desired span {
-    padding: 5px 0;
+  padding: 5px 0;
 }
 
 /* 프로젝트 리뷰 */
 footer {
-    background-color: #E1DFDD;
-    color: #E1DFDD;
+  background-color: #e1dfdd;
+  color: #e1dfdd;
 }
 footer #review {
-    background-color: #303030;
-    border-radius: 268px 268px 0 0;
-    padding: 214px 230px 140px;
+  background-color: #303030;
+  border-radius: 268px 268px 0 0;
+  padding: 214px 230px 140px;
 }
-#review .review_box  {
-    display: flex;
-    align-items: baseline;
+footer #review h2 {
+  color: #e1dfdd;
+}
+#review .review_box {
+  display: flex;
+  align-items: baseline;
 }
 .review_box .review_txt {
-    padding-left: 223px;
+  padding-left: 223px;
 }
 .review_box .review_txt span {
-    padding: 5px 0;
+  padding: 5px 0;
 }
 .review_box .review_txt p {
-    padding-bottom: 50px;
+  padding-bottom: 50px;
 }
 #review .view {
-    padding-top: 80px;
-    display: flex;
-    justify-content: center;
+  padding-top: 80px;
+  display: flex;
+  justify-content: center;
 }
 #review .view p {
-    width: 250px; height: 88px;
-    line-height: 88px;
-    border: 3px solid #E1DFDD;
-    margin: 0 60px;
+  width: 250px;
+  height: 88px;
+  line-height: 88px;
+  border: 3px solid #e1dfdd;
+  margin: 0 60px;
 }
 #review .view p a {
-    font-size: 30px;
-    text-align: center;
-    display: block;
+  font-size: 30px;
+  text-align: center;
+  display: block;
 }
 #review .view p:hover {
-    background-color: #E1DFDD;
-    color: #303030;
+  background-color: #e1dfdd;
+  color: #303030;
 }
