@@ -1,17 +1,34 @@
 @charset "utf-8";
 
+/* 드래그 색상 */
+::selection {
+  background-color: #303030;
+  color: #e1dfdd;
+}
+
+/* 스크롤바 */
+::-webkit-scrollbar {
+  width: 16px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #303030;
+  border-radius: 10px;
+}
 
 body {
- font-family: 'NanumSquare';
+  font-family: 'NanumSquare';
 }
+
 a {
-    color: #000;
+  color: #000;
 }
+
 header {
-    background-color: #e1dfdd;
-    font-family: "PP Neue Montreal";
-    text-transform: uppercase;
-    padding: 0 150px;
+  background-color: #e1dfdd;
+  font-family: "PP Neue Montreal";
+  text-transform: uppercase;
+  padding: 0 150px;
 }
 
 header h2 {
@@ -414,9 +431,11 @@ footer {
   text-transform: lowercase;
   font-size: 80px;
 }
+
 .contact .txt a {
-    color: #e1dfdd;
+  color: #e1dfdd;
 }
+
 .contact .txt::after {
   content: "";
   display: block;

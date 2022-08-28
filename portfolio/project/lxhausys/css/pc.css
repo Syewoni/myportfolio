@@ -1,11 +1,15 @@
 @charset "utf-8";
 
 @media (min-width: 1280px) {
-html,body {
-  height: 100%;
-  position: relative;
-}
-b
+
+  html,
+  body {
+    height: 100%;
+    position: relative;
+  }
+
+  b
+
   /* 메뉴 */
   header .top {
     padding: 25px 0;
@@ -28,11 +32,13 @@ b
     right: 18em; */
     display: none;
   }
+
   nav {
     height: 40px;
   }
+
   nav #menu {
-    width: 60%; 
+    width: 60%;
     position: absolute;
     right: 180px;
     top: 30px;
@@ -78,6 +84,18 @@ b
   }
 
   /* 메뉴 마우스 이벤트 */
+  #title_img #title .img1 {
+    background-image: url(../images/bg1.jpg);
+  }
+
+  #title_img #title .img2 {
+    background-image: url(../images/bg2.jpg);
+  }
+
+  #title_img #title .img3 {
+    background-image: url(../images/bg3.jpg);
+  }
+
   nav #menu li:hover .sub_menu {
     display: block;
   }
@@ -93,42 +111,6 @@ b
   }
 
   /* 메인 이미지 */
-  #title_img {
-    width: 100%;
-    height: 70vh;
-    position: relative;
-  }
-
-  #title_img #title {
-    height: 70vh;
-  }
-
-  #title_img #title .slide_item {
-    width: 100%;
-    height: 70vh;
-    position: absolute;
-    background: no-repeat 50% / cover;
-    transition: 1s;
-    opacity: 0;
-    text-indent: -9999px;
-  }
-
-  #title_img #title .img1 {
-    background-image: url(../images/bg1.jpg);
-  }
-
-  #title_img #title .img2 {
-    background-image: url(../images/bg2.jpg);
-  }
-
-  #title_img #title .img3 {
-    background-image: url(../images/bg3.jpg);
-  }
-
-  #title_img #title .slide_item.active {
-    opacity: 1;
-  }
-
   #title_img #btns {
     position: absolute;
     top: 50%;
@@ -190,21 +172,36 @@ b
   }
 
   /* 제품 소개 */
-  .swiper {
+  .swiper-slide .product {
+    width: 200px;
+    background-color: #ededed;
+    border-radius: 10px;
+    height: 140px;
+  }
+
+  .swiper-slide img {
+    /* line-height: 0; */
+    width: 70%;
+    max-width: 100%;
+    /* 이미지 최대너비를 제한, 슬라이드에 이미지가 여러개가 보여질때 필요 */
+    /* 이 예제에서 필요해서 설정했습니다. 상황에따라 다를 수 있습니다. */
+  }
+
+  /* .swiper {
     width: 100%;
     height: 100%;
     margin-left: auto;
     margin-right: auto;
-}
+  }
 
-.swiper-slide {
+  .swiper-slide {
     text-align: center;
     font-size: 18px;
     background: #fff;
-    /* height: calc((100% - 30px) / 2) !important; */
+    height: calc((100% - 30px) / 2) !important;
 
-    /* Center slide text vertically */
-   /*  display: -webkit-box;
+    
+    display: -webkit-box;
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
@@ -215,8 +212,9 @@ b
     -webkit-box-align: center;
     -ms-flex-align: center;
     -webkit-align-items: center;
-    align-items: center; */
-}
+    align-items: center;
+  }
+
   main .swiper .swiper-wrapper {
     margin: 0 auto;
     display: flex;
@@ -239,7 +237,7 @@ b
     height: 140px;
     margin: 10px;
     border-radius: 15px;
-  } 
+  }
 
   #product_wrapper .swiper-wrapper .product img {
     width: 130px;
@@ -261,7 +259,7 @@ b
   main .swiper-wrapper #icon7_box,
   main .swiper-wrapper #icon8_box {
     display: block;
-  }
+  } */
 
   /* 이벤트 배너 */
   main .event {

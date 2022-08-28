@@ -710,29 +710,28 @@ main h2 {
 }
 
 /* also like pagenation */
-/* #like .btns {
-  display: flex;
-  position: absolute;
-  bottom: 80px;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  width: 128px;
+#like .btns {
+    display: flex;
+    position: absolute;
+    bottom: 80px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
 }
+
 #like .btns li {
-  width: 18px;
-  height: 18px;
-  border-radius: 50%;
-  background-color: #c5c5c5;
-  margin: 5px;
-  text-indent: -9999px;
-  cursor: pointer;
-  transition: 0.3s;
+    border-radius: 50%;
+    background-color: #c5c5c5;
+    margin: 5px;
+    text-indent: -9999px;
+    cursor: pointer;
+    transition: 0.3s;
 }
+
 #like .btns li.active {
-  transform: scale(1.2);
-  background-color: #858585;
-} */
+    transform: scale(1.2);
+    background-color: #858585;
+}
 
 
 #store .store_img {
