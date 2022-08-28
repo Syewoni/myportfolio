@@ -1,0 +1,195 @@
+@charset "utf-8";
+
+@media (min-width: 1280px) {
+    nav h1 {
+        width: 34vw;
+        height: 13vh;
+        padding-left: 26px;
+    }
+
+    #check_box+label {
+        display: none;
+    }
+
+    nav #side_menu {
+        position: static;
+        width: 100%;
+    }
+
+    nav #side_menu>ul {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    nav #side_menu li {
+        border: none;
+        padding: 0 50px;
+    }
+
+    nav #side_menu li a {
+        display: block;
+    }
+
+    nav #side_menu li:hover>a {
+        color: #E63772;
+    }
+
+    nav #side_menu li:hover .sub_menu {
+        display: block;
+    }
+
+    nav #side_menu .sub_menu {
+        background-color: #000;
+        display: none;
+        position: absolute;
+        margin-top: 20px;
+    }
+
+    nav #side_menu .sub_menu li {
+        padding: 20px 15px;
+    }
+
+    nav #side_menu .sub_menu a {
+        font-size: 18px;
+    }
+
+    header .color_bar {
+        display: block;
+        height: 60px;
+        position: relative;
+    }
+
+    header .bar3 {
+        width: 727px;
+        position: absolute;
+        left: 50.9%;
+        top: 185px;
+        z-index: 10;
+    }
+
+    header .bar4 {
+        margin-top: -10px;
+    }
+
+    header .bar6 {
+        width: 185px;
+        height: 250px;
+        background-color: #3C895D;
+        position: absolute;
+        top: 245px;
+        right: 0;
+    }
+
+    header .header_txt {
+        padding-left: 70px;
+    }
+
+    .header_txt h2:first-child {
+        font-size: 80px;
+    }
+
+    .header_txt h2:last-child {
+        font-size: 55px;
+    }
+
+    header .bar7 {
+        width: 1431px;
+        height: 260px;
+    }
+
+    header .bar7 .bar_txt {
+        position: static;
+        font-size: 50px;
+        padding: 20px 70px;
+    }
+
+    header .bar7 .bar_txt p {
+        display: flex;
+    }
+
+    header .bar7 .bar_txt p span:last-child {
+        padding-left: 24px;
+    }
+
+    header .bar7 .bar_txt .studio {
+        display: flex;
+        align-items: center;
+    }
+
+    header .bar7 .bar_txt .studio p {
+        margin-top: 5px;
+        padding-left: 47px;
+    }
+
+    header .bar7 .bar_txt .studio * {
+        margin: 0;
+    }
+
+    header .festival {
+        width: 70%;
+        height: 80%;
+        position: absolute;
+        left: 44.5%;
+        top: 10%;
+    }
+
+    header .day {
+        font-size: 45px;
+    }
+
+    header .day .size {
+        font-size: 30px;
+    }
+
+    header .day p:first-child {
+        top: 62%;
+        left: 80px;
+        z-index: 100;
+    }
+
+    header .day p:last-child {
+        top: 62%;
+        left: 447px;
+        z-index: 100;
+    }
+
+    .message {
+        height: 80vh;
+    }
+
+    .message .background {
+        position: relative;
+    }
+
+    .message .background h2 {
+        font-size: 150px;
+        position: absolute;
+        top: 30px;
+        z-index: 100;
+        padding-left: 60px;
+    }
+
+    .message .bar10 {
+        width: 727px;
+        position: absolute;
+        top: 180px;
+    }
+
+    .message .bar11 {
+        width: 495px;
+        position: absolute;
+        top: 240px;
+        z-index: 100;
+    }
+
+    .circle1 {
+        width: 490px;
+        height: 490px;
+    }
+
+    .circle2 {
+        margin-top: 100px;
+        width: 380px;
+        height: 380px;
+    }
+}
