@@ -6,6 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport"
         content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalble=no" />
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="../../../favicon/FAVICON.png" />
+
     <title>NDA 국제 무용 페스티벌</title>
 
     <!-- googlefont - notoSans KR -->
@@ -17,6 +21,7 @@
     <!-- minireset -->
     <link rel="stylesheet" href="../../../common/minireset.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/pc.css">
 </head>
 
 <body>
@@ -52,35 +57,51 @@
         <div class="color_bar bar4"></div>
         <div class="color_bar bar5"></div>
         <div class="color_bar bar6"></div>
-        <div class="color_bar bar7"></div>
+        <div class="color_bar bar7">
+            <div class="bar_txt">
+                <h3>대구문화예술회관 비슬홀</h3>
+                <p>
+                    <span>DAEGU ART CENTER</span>
+                    <span>BISEUL HALL</span>
+                </p>
+                <div class="studio">
+                    <h3>아이러브발레 스튜디오</h3>
+                    <p>I LOVE BALLET STUDIO</p>
+                </div>
+            </div>
+        </div>
         <div class="color_bar bar8">
-            <h3>대구문화예술회관 비슬홀</h3>
-            <p>DAEGU ART CENTER BISEUL HALL</p>
-            <h3>아이러브발레 스튜디오</h3>
-            <p>I LOVE BALLET STUDIO</p>
         </div>
         <div class="day">
             <p>
-                <span>2022.08.12<span>FRI</span></span>
-                <span>- 08.15<span>SUN</span>
+                <span>2022.08.12</span>
+                <span class="size">FRI</span>
+            </p>
+            <p>
+                <span>- 08.15</span>
+                <span class="size">SUN</span>
             </p>
         </div>
 
         <div class="color_bar bar9"></div>
-        <img src="./images/dance.png" alt="NDA 국제 무용 페스티벌">
-        <div class="background">
-            <h2>NDA 2022</h2>
-            <div class="color_bar bar10"></div>
-            <div class="color_bar bar11"></div>
+        <img src="./images/dance.png" alt="NDA 국제 무용 페스티벌" class="festival">
+
+        <div class="message">
+            <div class="background">
+                <h2>NDA 2022</h2>
+                <div class="color_bar bar10"></div>
+                <div class="color_bar bar11"></div>
+            </div>
+            <p>CONGRAULATORY<br>MESSAGE</p>
+            <div class="circle circle1"></div>
+            <div class="circle circle2"></div>
+            <div class="circle circle3"></div>
+            <div class="with">
+                <p>WITH NDA</p>
+                <img src="./images/arrow.svg" alt="화살표">
+            </div>
         </div>
-        <p>CONGRAULATORY<br>MESSAGE</p>
-        <div class="circle circle1"></div>
-        <div class="circle circle2"></div>
-        <div class="circle circle3"></div>
-        <div class="with">
-            <p>WITH NDA</p>
-            <img src="./images/arrow.svg" alt="화살표">
-        </div>
+
     </header>
     <main>
         <div class="year_slide">
@@ -190,7 +211,7 @@
                     <span>마스단사 셀렉션</span>
                     <span>masdanza selection</span>
                 </p>
-                <p class="day">2022.08.12(금) 7pm 대구 문화예술회관 비슬홀</p>
+                <p class="day">2022.08.12(금) 7pm <span>대구 문화예술회관 비슬홀</span></p>
             </div>
             <div class="program dance2">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/DorzZhmlLN0"
@@ -201,7 +222,7 @@
                     <span>대구 댄스 컬렉션</span>
                     <span>daegu dance collection</span>
                 </p>
-                <p class="day">2022.08.13(토) 7:30pm 아이러브발레 스튜디오 블랙박스</p>
+                <p class="day">2022.08.13(토) 7:30pm <span>아이러브발레 스튜디오 블랙박스</span></p>
             </div>
             <div class="program dance3">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/7GotVgNcrFQ"
@@ -212,7 +233,7 @@
                     <span>컨템포러리 댄스 시리즈</span>
                     <span>contemporary dance series</span>
                 </p>
-                <p class="day">2022.08.13(토) 7:30pm 대구 문화예술회관 비슬홀</p>
+                <p class="day">2022.08.13(토) 7:30pm <span>대구 문화예술회관 비슬홀</span></p>
             </div>
             <div class="program dance4">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/FIEx_Uj__XU"
@@ -223,7 +244,7 @@
                     <span>아시안 솔로 댄스</span>
                     <span>asian solo dance</span>
                 </p>
-                <p class="day">2022.08.14(일) 7pm 대구 문화예술회관 비슬홀</p>
+                <p class="day">2022.08.14(일) 7pm <span>대구 문화예술회관 비슬홀</span></p>
             </div>
         </div>
     </main>
@@ -258,7 +279,9 @@
                 <li><a href="#">Location</a></li>
             </ul>
         </div>
-        <p><a href="#">내 포트폴리오로 바로가기</a></p>
+        <div class="shortcut">
+            <a href="../../../index.html">내 포트폴리오로 바로가기</a>
+        </div>
 
     </footer>
 </body>
