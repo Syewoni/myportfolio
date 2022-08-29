@@ -1,8 +1,8 @@
 @font-face {
-    font-family: 'Pragmatica';
-    src: url('../fonts/Pragmatica.woff2') format('woff2'),
-        url('../fonts/Pragmatica.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Pragmatica";
+  src: url("../fonts/PragmaticaExtended-Bold.woff2") format("woff2"),
+    url("../fonts/PragmaticaExtended-Bold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
