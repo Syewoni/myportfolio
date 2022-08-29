@@ -219,6 +219,10 @@
   .message .with {
     width: 384px;
     height: 76px;
+    transition: 0.3s;
+  }
+  .message .with:hover {
+    color: #000;
   }
   .message .with p {
     font-size: 30px;
@@ -312,6 +316,10 @@
     margin-top: 30px;
     width: 384px;
     height: 71px;
+    transition: 0.3s;
+  }
+  .nda:hover {
+    color: #e63772;
   }
   .nda p {
     font-size: 30px;
@@ -402,6 +410,7 @@
   footer .shortcut a {
     font-size: 20px;
     padding: 20px 30px;
+    transition: 0.8s;
   }
   footer .shortcut a:hover {
     background-color: #e63772;
