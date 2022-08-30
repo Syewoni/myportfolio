@@ -25,6 +25,7 @@
 
     <!-- minireset -->
     <link rel="stylesheet" href="../../../common/minireset.css" />
+
     <!-- style.css -->
     <link rel="stylesheet" href="./css/style.css" />
     <!-- tablet.css -->
@@ -34,11 +35,54 @@
 
     <!-- jQuery -->
     <script src="../../../common/jquery-3.6.0.min.js"></script>
+
     <!-- script.js -->
     <script src="./css/script.js"></script>
   </head>
 
   <body>
+    <div id="modal">
+      <div class="modal_txt">
+        <div class="title">
+          <h2>제 11회 NDA 국제 무용 페스티벌</h2>
+          <p>The 11 Edition New Dancefor Asia International Festival</p>
+        </div>
+        <div class="content">
+          <p>
+            올해 제 11회 NDA 국제 무용 페스티벌의 전 프로그램을 대구에서
+            처음으로 선보였습니다.<br />
+            축제의 메인 프로그램 공연과 부대행사의 워크샵을 성공적으로
+            마쳤습니다.<br />
+            축제 팀원들과 기술팀 그리고 멋진 작품들로 무대를 빛내어준 참가자들께
+            감사의 마음 전합니다.
+          </p>
+          <p>감사합니다.</p>
+
+          <div class="en">
+            <p>
+              This year, theentire program of the 11th New Dance for Asia
+              International Dance Festival<br />was presented for the first time
+              in Daegu.<br />
+              The main program performance of the festival and the workshop of
+              the side event were<br />successfully completed.<br />
+              NDA will come to you in 2023 with new programs and works.
+            </p>
+            <p>
+              A big thank you to the festival team, the technical team, and the
+              contestants who helped<br />
+              shape the stage with some great creations.
+            </p>
+            <p>Thank you</p>
+          </div>
+        </div>
+        <div class="end">
+          <p>See you again in 2023</p>
+        </div>
+      </div>
+
+      <button>오늘 하루 보지 않기</button>
+      <button>닫기</button>
+    </div>
     <header>
       <nav>
         <h1>
@@ -142,7 +186,7 @@
           <div class="color_bar bar12"></div>
         </div>
         <p>
-          <a href="#">NEW DANCE <br />FOR ASIA</a>
+          <a href="#">THE 11 EDITION:<br />RESTARTING</a>
         </p>
         <div class="circle circle1"></div>
         <div class="circle circle2"></div>
@@ -180,81 +224,66 @@
           <img src="./images/year-flash.svg" alt="year-flash" />
         </div>
       </div>
-      <div class="banner">
-        <ul id="poster_slide">
-          <li>
-            <a href="#">
-              <img src="./images/2012.jpg" alt="2012년 포스터" />
-              <p>12</p>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="./images/2013.jpg" alt="2013년 포스터" />
-              <p>13</p>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="./images/2014.jpg" alt="2014년 포스터" />
-              <p>14</p>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="./images/2015.png" alt="2015년 포스터" />
-              <p>15</p>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="./images/2016.jpg" alt="2016년 포스터" />
-              <p>16</p>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="./images/2017.jpg" alt="2017년 포스터" />
-              <p>17</p>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="./images/2018.jpg" alt="2018년 포스터" />
-              <p>18</p>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="./images/2019.png" alt="2019년 포스터" />
-              <p>19</p>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="./images/2020.png" alt="2020년 포스터" />
-              <p>20</p>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="./images/2021.jpg" alt="2021년 포스터" />
-              <p>21</p>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="./images/2022.jpg" alt="2022년 포스터" />
-              <p>22</p>
-            </a>
-          </li>
-        </ul>
-      </div>
+      <!-- <div class="banner">
+        <h2>11th NDA FESTIVAL</h2>
+        <div class="slide">
+          <ul id="dance_slide">
+            <li>
+              <img src="./images/poster1.jpg" alt="non-object" />
+              <div class="slide_txt">
+                <h2>작품명 : 연착륙합니다.</h2>
+                <p>출연 : 김가현</p>
+                <p><a href="#">작품소개 보러가기</a></p>
+              </div>
+            </li>
+            <li>
+              <img src="./images/poster2.jpg" alt="강 하오 추" />
+              <div class="slide_txt">
+                <h2>측면</h2>
+                <p>양 츠완 위, 후앙 촤이 웬</p>
+                <p><a href="#">작품소개 보러가기</a></p>
+              </div>
+            </li>
+            <li>
+              <img src="./images/poster3.jpg" alt="춤나 댄스 컴퍼니" />
+              <div class="slide_txt">
+                <h2>곰뱅이텄다</h2>
+                <p>김요셉</p>
+                <p><a href="#">작품소개 보러가기</a></p>
+              </div>
+            </li>
+            <li>
+              <img src="./images/poster4.jpg" alt="팻 토" />
+              <div class="slide_txt">
+                <h2>호흡의 지형(2020)</h2>
+                <p>팻 토</p>
+                <p><a href="#">작품소개 보러가기</a></p>
+              </div>
+            </li>
+            <li>
+              <img src="./images/poster5.jpg" alt="도도무브댄스시어터" />
+              <div class="slide_txt">
+                <h2>포용(Embrace)</h2>
+                <p>박정은</p>
+                <p><a href="#">작품소개 보러가기</a></p>
+              </div>
+            </li>
+            <li>
+              <img src="./images/poster6.jpg" alt="엘리스 마" />
+              <div class="slide_txt">
+                <h2>Over-Master 點指</h2>
+                <p>엘리스 마</p>
+                <p><a href="#">작품소개 보러가기</a></p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div> -->
 
-      <div class="nda">
+      <!-- <div class="nda">
         <p>NDA HISTORY</p>
         <img src="./images/arrow.svg" alt="화살표" />
-      </div>
+      </div> -->
       <div id="program">
         <h3>NDA PROGRAM</h3>
         <div class="program dance1">
@@ -318,6 +347,55 @@
           </p>
         </div>
       </div>
+
+      <div class="newswrapper">
+        <h2 class="newsname">NDA NEWS</h2>
+        <table class="news">
+          <tr class="title">
+            <th>NO</th>
+            <td>제목</td>
+            <td>작성자</td>
+            <td>작성일</td>
+          </tr>
+          <tr>
+            <th>01</th>
+            <td>2022년 마스단사 셀렉션 수상자 결과</td>
+            <td>New Dance for Asia <span>2022</span></td>
+            <td>5일 전</td>
+          </tr>
+          <tr>
+            <th>02</th>
+            <td>컨템포러리 댄스 워크샵 시리즈 by 헤마바라티 팔라니</td>
+            <td>New Dance for Asia <span>2022</span></td>
+            <td>1달 전</td>
+          </tr>
+          <tr>
+            <th>03</th>
+            <td>제 7회 마스단사 셀렉션 국내팀 선정 결과</td>
+            <td>NDA 2022</td>
+            <td>2달 전</td>
+          </tr>
+          <tr>
+            <th>04</th>
+            <td>컨템포러리 댄스 워크샵 시리즈 by 류진욱</td>
+            <td>NDA 2022</td>
+            <td>2달 전</td>
+          </tr>
+          <tr>
+            <th>05</th>
+            <td>컨템포러리 댄스 워크샵 시리즈 by 이준욱</td>
+            <td>NDA 2022</td>
+            <td>2달 전</td>
+          </tr>
+          <tr>
+            <th>06</th>
+            <td>마스단사 셀렉션 작품 공모 신청</td>
+            <td>NDA 2019</td>
+            <td>3달 전</td>
+          </tr>
+        </table>
+      </div>
+      
     </main>
     <footer>
       <div class="footer_box">
@@ -329,9 +407,9 @@
         </address>
         <ul id="footer_menu">
           <li>
-            <a href="#">About Festival</a>
+            <a href="#">About</a>
             <ul class="footer_sub">
-              <li><a href="#">제 11회 NDA 페스티벌</a></li>
+              <li><a href="#">NDA 페스티벌</a></li>
               <li><a href="#">NDA 페스티벌 팀</a></li>
               <li><a href="#">축하 메세지</a></li>
             </ul>
@@ -350,8 +428,15 @@
           <li><a href="#">Location</a></li>
         </ul>
       </div>
-      <div class="shortcut">
-        <a href="../../../index.html">포트폴리오 바로가기</a>
+      <div class="bottom">
+        <div class="shortcut">
+          <a href="../../../index.html">포트폴리오 바로가기</a>
+        </div>
+        <ul class="icon">
+          <li><img src="./images/insta.svg" alt="인스타그램" /></li>
+          <li><img src="./images/facebook.svg" alt="페이스북" /></li>
+          <li><img src="./images/youtube.svg" alt="유튜브" /></li>
+        </ul>
       </div>
     </footer>
   </body>

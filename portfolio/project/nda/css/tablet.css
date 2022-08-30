@@ -1,0 +1,229 @@
+@charset "utf-8";
+
+@media (min-width: 768px) {
+  #modal {
+    font-size: 16px;
+    width: 600px;
+    height: 800px;
+  }
+  #modal .title h2 {
+    font-size: 25px;
+  }
+  #modal .en {
+    display: block;
+  }
+  #modal .en p:nth-child(1) {
+    padding-top: 20px;
+  }
+  #modal .en p {
+    padding-bottom: 20px;
+  }
+  #modal button {
+    padding: 15px;
+    font-size: 16px;
+  }
+  h1 {
+    width: 410px;
+    height: 70px;
+  }
+  header #side_menu {
+    width: 400px;
+    padding: 100px 20px;
+    right: -400px;
+  }
+  header #side_menu ul > li {
+    font-size: 28px;
+  }
+  header #side_menu ul > li > .sub_menu li {
+    font-size: 20px;
+  }
+  header .header_txt h2:first-child {
+    font-size: 2.5rem;
+  }
+  header .header_txt h2:last-child {
+    font-size: 1.6rem;
+  }
+  header .bar2 {
+    display: none;
+  }
+  header .bar11,
+  header .bar12 {
+    display: block;
+  }
+  header .bar7 {
+    height: 234px;
+  }
+  header .bar7 .bar_txt {
+    font-size: 1.9rem;
+    top: 30vh;
+  }
+  header .bar7 .bar_txt .studio {
+    margin-top: 30px;
+  }
+  header .bar7 .bar_txt .studio h3,
+  header .bar7 .bar_txt .studio p {
+    margin: 0;
+  }
+  header .bar9 {
+    background-color: #172774;
+  }
+  header .bar10 {
+    display: block;
+    background-color: #e63772;
+  }
+  header .bar11 {
+    width: 46%;
+  }
+  header .bar12 {
+    width: 40.5%;
+  }
+  header .day p {
+    font-size: 2.2rem;
+  }
+  header .day .size {
+    font-size: 1.4rem;
+  }
+  header .day p:first-child {
+    top: 57vh;
+  }
+  header .day p:last-child {
+    top: 61.3vh;
+    left: 10vw;
+  }
+  header .festival {
+    /* width: 70%; */
+    height: 60%;
+    top: 10vh;
+    left: 33%;
+    /* z-index: 2; */
+  }
+  header .message {
+    position: relative;
+  }
+  header .background {
+    position: relative;
+    z-index: 1;
+  }
+  header .background h2 {
+    font-size: 4.2rem;
+    position: relative;
+    top: 4vh;
+    left: -18vw;
+  }
+  .message > p {
+    font-size: 2rem;
+    position: absolute;
+    top: 15vh;
+    left: 4vw;
+  }
+  .circle1 {
+    width: 360px;
+    height: 360px;
+  }
+  .circle2 {
+    width: 270px;
+    height: 270px;
+    position: absolute;
+    left: -8vw;
+  }
+  .circle3 {
+    width: 400px;
+    height: 400px;
+  }
+  .with {
+    width: 300px;
+    height: 105px;
+  }
+  .with p {
+    font-size: 1.5rem;
+  }
+  /* 년도 슬라이드 */
+  main .year_slide {
+    display: block;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+  main .year_slide .track {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    will-change: transform;
+    animation: marquee 10s linear infinite;
+  }
+  main .year_slide h4 {
+    font-size: 100px;
+    font-weight: 100;
+    margin: 0 50px;
+  }
+  main .year_slide img {
+    margin-top: 20px;
+    width: 82px;
+    height: 82px;
+  }
+  /* 움직이는 텍스트 */
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+  @media (hover: hover) and (min-width: 700px) {
+    .animated-title .content {
+      -webkit-transform: translateY(calc(100% - 8rem));
+      transform: translateY(calc(100% - 8rem));
+    }
+  }
+  .banner h3,
+  #program h3 {
+    font-size: 1.5rem;
+  }
+  #program iframe {
+    width: 564px;
+    height: 326px;
+  }
+  #program .name span {
+    font-size: 1.4rem;
+  }
+  #program .day span {
+    display: inline-block;
+  }
+  .news td:nth-of-type(1) {
+    width: 60%;
+  }
+  .news td:nth-of-type(2) {
+    display: inline-block;
+    text-align: left;
+    /* width: 30%; */
+  } 
+  .news td:nth-of-type(3) {
+    width: 10%;
+  }
+  footer {
+    font-size: 1.3rem;
+  }
+  footer address p:nth-of-type(4) {
+    font-size: 1.3rem;
+    text-align: center;
+    margin-top: 120px;
+  }
+  footer .icon {
+    left: auto;
+    right: -70vw;
+    top: 3.5vh;
+  }
+  footer .icon img {
+    width: 40%;
+  }
+  footer .shortcut {
+    border: none;
+    position: absolute;
+    bottom: 6vh;
+    left: 15px;
+  }
+}
