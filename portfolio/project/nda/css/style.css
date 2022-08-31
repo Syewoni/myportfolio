@@ -19,7 +19,8 @@ a {
   left: 50%;
   transform: translateX(-50%);
   font-size: 14px;
-  background-color: #187498;
+  background-color: #54bab9;
+  color: #000;
   z-index: 10000;
   width: 350px;
   height: 400px;
@@ -44,7 +45,7 @@ a {
   margin-top: 25px;
   font-size: 1.2rem;
   text-align: right;
-  border-top: 1px solid orange;
+  border-top: 1px solid #e9dac1;
 }
 #modal > button {
   padding: 5px;
@@ -238,6 +239,7 @@ header .bar7 .studio {
   margin-top: 5px;
   position: relative;
   z-index: 100;
+  color: #fff;
 }
 
 header .bar7 .studio h3 {
@@ -513,6 +515,10 @@ main .year_slide {
   padding-bottom: 100px;
 }
 /* 뉴스 */
+.newswrapper {
+  position: relative;
+  margin-bottom: 100px;
+}
 .newsname {
   font-family: "Pragmatica";
   font-weight: bold;
@@ -539,9 +545,15 @@ table {
 table tr {
   border-bottom: 1px solid rgb(168, 168, 168);
 }
-td{
+td {
   /* border: 1px solid #ccc; */
   padding: 15px; /* 테두리 안쪽 여백 */
+  text-align: center;
+}
+.news th {
+  display: none;
+}
+.news .title td:nth-of-type(1) {
   text-align: center;
 }
 .news tr:first-child td:first-child {
@@ -557,6 +569,16 @@ td{
 .news td:nth-of-type(3) {
   width: 20%;
 }
+.newswrapper .more {
+  position: absolute;
+  right: 3vw;
+  bottom: -5vh;
+}
+.newswrapper .more a {
+  font-size: 0.9rem;
+  display: block;
+}
+
 /* footer */
 footer {
   border-top: 2px solid #e63772;
