@@ -10,13 +10,14 @@
     font-size: 17px;
   }
   #modal .title h2 {
+    padding-top: 50px;
     font-size: 30px;
   }
   #modal .title p {
     font-size: 20px;
   }
   #modal .end {
-    border-top: 3px solid orange;
+    border-top: 3px solid #e9dac1;
     font-size: 2rem;
   }
   nav h1 {
@@ -120,6 +121,7 @@
   }
 
   header .bar7 .bar_txt {
+    color: #000;
     width: 120%;
     position: static;
     font-size: 50px;
@@ -136,8 +138,10 @@
   }
 
   header .bar7 .bar_txt .studio {
+    color: #000;
     display: flex;
     align-items: center;
+    margin-top: 3vh;
   }
 
   header .bar7 .bar_txt .studio p {
@@ -386,29 +390,44 @@
     font-weight: 300;
   }
   .newswrapper {
-    margin: 160px 0;
+    margin: 160px 0 250px;
   }
   .newsname {
     font-size: 30px;
   }
   .news {
     width: 80%;
-    margin: 0  auto;
+    margin: 0 auto;
     font-size: 18px;
   }
   .news span {
     display: inline-block;
   }
   .news tr:hover:not(.title) {
-    background-color: #a3a3a3;
+    background-color: #c9c9c9;
     color: #000;
   }
   td {
-    padding:15px 40px;
+    padding: 15px 40px;
   }
-  .news td:nth-of-type(1), 
+  .news th {
+    text-align: left;
+    display: block;
+    padding-left: 30px;
+  }
+  .news td:nth-of-type(1),
   .news td:nth-of-type(2) {
     text-align: center;
+  }
+  .newswrapper .more {
+    right: 10vw;
+    bottom: -5vh;
+  }
+  .newswrapper .more a {
+    font-size: 1.2rem;
+  }
+  .newswrapper .more a:hover {
+    color: #e63772;
   }
   footer {
     position: relative;

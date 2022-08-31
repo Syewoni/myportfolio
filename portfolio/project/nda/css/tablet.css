@@ -54,11 +54,13 @@
     height: 234px;
   }
   header .bar7 .bar_txt {
+    color: #fff;
     font-size: 1.9rem;
     top: 30vh;
   }
   header .bar7 .bar_txt .studio {
-    margin-top: 30px;
+    color: #000;
+    margin-top: 6vh;
   }
   header .bar7 .bar_txt .studio h3,
   header .bar7 .bar_txt .studio p {
@@ -140,19 +142,17 @@
   /* 년도 슬라이드 */
   main .year_slide {
     display: block;
-    overflow-x: hidden;
+    /* overflow-x: hidden;
     overflow-y: hidden;
     position: relative;
     width: 100%;
     max-width: 100%;
-    height: auto;
+    height: auto; */
   }
   main .year_slide .track {
     display: flex;
     align-items: center;
-    white-space: nowrap;
-    will-change: transform;
-    animation: marquee 10s linear infinite;
+    animation: marquee 40s linear infinite;
   }
   main .year_slide h4 {
     font-size: 100px;
@@ -165,19 +165,28 @@
     height: 82px;
   }
   /* 움직이는 텍스트 */
+
   @keyframes marquee {
-    from {
-      transform: translateX(0);
+    0% {
+      left: 0;
     }
-    to {
-      transform: translateX(-50%);
+    100% {
+      left: -100%;
     }
   }
-  @media (hover: hover) and (min-width: 700px) {
-    .animated-title .content {
-      -webkit-transform: translateY(calc(100% - 8rem));
-      transform: translateY(calc(100% - 8rem));
-    }
+
+  .year_slide .slide_wrapper {
+    overflow: hidden;
+  }
+
+  .year_slide .slide_wrapper .track {
+    position: relative;
+    display: flex;
+    width: 200%;
+  }
+
+  .year_slide .slide_wrapper .track:nth-child(1) {
+    animation: marquee 20s linear infinite;
   }
   .banner h3,
   #program h3 {
@@ -193,16 +202,28 @@
   #program .day span {
     display: inline-block;
   }
+  .newswrapper {
+    margin-bottom: 150px;
+  }
   .news td:nth-of-type(1) {
     width: 60%;
+    text-align: center;
   }
   .news td:nth-of-type(2) {
     display: inline-block;
     text-align: left;
     /* width: 30%; */
-  } 
+  }
+
   .news td:nth-of-type(3) {
     width: 10%;
+  }
+  .newswrapper .more {
+    right: 1vw;
+    bottom: -3vh;
+  }
+  .newswrapper .more a {
+    font-size: 1rem;
   }
   footer {
     font-size: 1.3rem;
