@@ -1,213 +1,251 @@
 <!DOCTYPE html>
 <html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalble=no"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport"
-    content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalble=no" />
+    <!-- favicon -->
+    <link rel="shortcut icon" href="../../../favicon/FAVICON.png" />
 
-  <!-- favicon -->
-  <link rel="shortcut icon" href="../../../favicon/FAVICON.png" />
+    <title>Project02 Lunne</title>
 
-  <title>Project02 Lunne</title>
+    <!-- minireset 연결 -->
+    <link rel="stylesheet" href="../../../common/minireset.css" />
+    <!-- 웹폰트 연결 -->
+    <link rel="stylesheet" href="../../project/lxhausys/css/fonts.css" />
+    <link rel="stylesheet" href="../../mainpage/css/fonts.css" />
+    <!-- style.css -->
+    <link rel="stylesheet" href="./style.css" />
+    <!-- jQuery -->
+    <script src="../../../common/jquery-3.6.0.min.js"></script>
+    <!-- script.js -->
+    <script src="./script.js"></script>
+  </head>
 
-  <!-- minireset 연결 -->
-  <link rel="stylesheet" href="../../../common/minireset.css" />
-  <!-- 웹폰트 연결 -->
-  <link rel="stylesheet" href="../../project/lxhausys/css/fonts.css" />
-  <link rel="stylesheet" href="../../mainpage/css/fonts.css" />
-  <!-- style.css -->
-  <link rel="stylesheet" href="./style.css" />
-  <!-- jQuery -->
-  <link rel="stylesheet" href="../../../common/jquery-3.6.0.min.js">
-  <!-- script.js -->
-  <script src="./script.js"></script>
-</head>
-
-<body>
-  <div class="mouse"></div>
-  <header>
-    <nav>
-      <ul id="menu">
-        <li>View project 02</li>
-        <li>
-          <a href="https://syewoni.github.io/myportfolio/">포트폴리오로 돌아가기</a>
-        </li>
-      </ul>
-      <h1>Website Redesign</h1>
-      <h2>LUNNE</h2>
-      <p>
-        <span>오래도록 지속 가능한 디자인과 시간이 지나도 변하지 않는 영원한
-          소재를 통해</span>
-        <span>일상 속에서도 편안하게 착용할 수 있는 주얼리 브랜드</span>
-      </p>
-      <div class="title_img">lunne 소개</div>
-    </nav>
-  </header>
-  <main>
-    <section id="top">
-      <h3>LUNNE</h3>
-      <div class="top_txt">
-        <div class="overview">
-          <h4>overview</h4>
-          <p class="title">룬느 홈페이지 리디자인</p>
-          <p>
-            <span>주얼리 브랜드인 룬느의 홈페이지를 리디자인 하였습니다. 기존
-              상품 나열로 이루어지던</span>
-            <span>웹 사이트에서 브랜드 소개 및 컬렉션 나열 등으로 브랜드에 대해
-              자세히</span>
-            <span>알 수 있게끔 디자인하여 제작하였습니다.</span>
-          </p>
-          <p class="sub">개인프로젝트 100%</p>
-          <p>작업기간 : 2022.08.13 ~ 08.24</p>
-        </div>
-        <div class="infor">
-          <h4>site information</h4>
-          <div class="infor_txt">
-            <p class="title">웹사이트 리뉴얼</p>
-            <p>PC 1440px</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="middle">
-      <h3>Design</h3>
-      <div class="design">
-        <div class="keyword">
-          <div class="key_txt">
-            <h4>keyword</h4>
-            <p>
-              <span>#깔끔한</span><span>#심플한</span><span>#모던한</span>
-            </p>
-          </div>
-          <p class="title">
-            룬느가 가진 아이덴티티를 잃지 않고 깔끔하고 모던한 느낌으로
-            디자인하였습니다.
-          </p>
-        </div>
-        <div class="color">
-          <h4>Color</h4>
-          <div class="color_box title">
-            <div class="code">
-              <p>#FFFFFF</p>
-            </div>
-            <div class="code">
-              <p>#CFC8C3</p>
-            </div>
-            <div class="code">
-              <p>#362706</p>
-            </div>
-          </div>
-        </div>
-        <div class="font">
-          <h4>Typography</h4>
-          <p class="title">
-            가독성이 좋고 깔끔한 느낌을 전달하기 위해 Noto Sans KR 서체를
-            사용하였습니다.
-          </p>
-          <ul id="font_box">
-            <li>Noto Sans KR</li>
-            <li>Bold</li>
-            <li>가</li>
-            <li>Regular</li>
-            <li>가</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-    <section id="bottom">
-      <h3>Web <span>Publishing</span></h3>
-      <div class="bottom_box">
-        <div class="publishing">
-          <h4>Publishing</h4>
-          <ul id="list">
-            <li>Chrome 브라우저 최적화</li>
-            <li>
-              어떤 환경에서도 적용한 폰트를 확인할 수 있도록 구글 웹 폰트 적용
-            </li>
-            <li>position을 사용한 레이아웃 구현</li>
-            <li>상단 메뉴 마우스 오버시 드롭다운 메뉴 구현</li>
-            <li>
-              자바스크립트를 이용한 이미지 슬라이드 및 슬라이드 마우스 :hover
-              시 슬라이드 멈춤 구현
-            </li>
-            <li>
-              vw 가변 단위 값을 이용한 사용자별 환경, 디바이스 제약 해결
-            </li>
-            <li>스크롤 시 nav의 background-color 변경</li>
-            <li>background-attachment를 통한 스크롤 시 배경이미지 고정</li>
-          </ul>
-        </div>
-        <div class="problem">
-          <h4>Problem & Solution</h4>
-          <div class="size txt">
-            <p class="title">이미지 슬라이드 :hover시 변경되는 이미지 크기</p>
-            <p>
-              <span>컬렉션 슬라이드에 :hover 시 착용한 모습을 확인할 수 있도록
-                이미지를 넣었는데 비율이 맞지</span>
-              <span>않아 :hover 시 위 아래, 좌우로 이미지가 늘어나는 모습을
-                확인할 수 있었습니다.</span>
-              <span>이미지의 비율을 조정하여 이미지가 늘어나지 않도록
-                수정하였습니다.</span>
-            </p>
-          </div>
-          <div class="img">
-            <div class="txt">
-              <p class="title">연한 주요 글자 컬러로 인해 떨어지는 가독성</p>
-              <p>
-                <span>주요 글자 색상을 흰색으로 해두었더니 배경색과의 대비가
-                  떨어져 글이 잘 읽히지 않았습니다.</span>
-                <span>배경색상과 어울리는 진한 글자 색상으로 선택하여 가독성 좋게
-                  글이 읽힐 수 있도록 수정하였습니다.</span>
-              </p>
-            </div>
-          </div>
-          <div class="contents">
-            <div class="txt">
-              <p class="title">무한반복되지 않고 끊기는 슬라이드</p>
-              <p>
-                <span>처음 슬라이드를 적용시키고 확인하였을 때 슬라이드가
-                  움직이나 무한으로 반복되지 않아</span>
-                <span>이미지 슬라이드가 끝나면 아무것도 나타나지 않는 것을 확인할
-                  수 있었습니다.</span>
-                <span>prepend, append를 통해 앞, 뒤에 요소를 추가하여 무한루프
-                  슬라이드를 구현하였습니다.</span>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-  <footer>
-    <div class="review">
-      <h4>Review</h4>
-      <div class="review_txt">
+  <body>
+    <div class="mouse"></div>
+    <header>
+      <nav>
+        <ul id="menu">
+          <li>View project 02</li>
+          <li>
+            <a href="https://syewoni.github.io/myportfolio/"
+              >포트폴리오로 돌아가기</a
+            >
+          </li>
+        </ul>
+        <h1>Website Redesign</h1>
+        <h2>LUNNE</h2>
         <p>
-          <span>JavaScript를 적용시키는 과정에서 많은 시행착오를 겪고 구글링을
-            통해 해결해보고</span>
-          <span>어떻게 해야 움직임이 구현되는건지 많이 찾아보고 이해해보고자
-            노력하였습니다.</span>
-          <span>JavaScript를 적용하는 과정에서 아직 이해도가 많이 부족하다고 느껴
-            공부가 더 필요할 것 같습니다.</span>
+          <span
+            >오래도록 지속 가능한 디자인과 시간이 지나도 변하지 않는 영원한
+            소재를 통해</span
+          >
+          <span>일상 속에서도 편안하게 착용할 수 있는 주얼리 브랜드</span>
         </p>
-        <p class="closing">
-          <span>아직 완벽한 결과물을 완성하기에는 부족하다는 생각이 많이
-            들었습니다.</span>
-          <span>잘 이해했다고 생각했던 것들도 막상 적용시켜보니 생각했던것대로
-            이루어지지 않아 많은 고민을 한 프로젝트였습니다.</span>
-          <span>보완해야할 문제점을 파악하고 끈기를 가지고 완성했다는 것에 의의를
-            두고 싶습니다.</span>
-        </p>
+        <div class="title_img">lunne 소개</div>
+      </nav>
+    </header>
+    <main>
+      <section id="top">
+        <h3>LUNNE</h3>
+        <div class="top_txt">
+          <div class="overview">
+            <h4>overview</h4>
+            <p class="title">룬느 홈페이지 리디자인</p>
+            <p>
+              <span
+                >주얼리 브랜드인 룬느의 홈페이지를 리디자인 하였습니다. 기존
+                상품 나열로 이루어지던</span
+              >
+              <span
+                >웹 사이트에서 브랜드 소개 및 컬렉션 나열 등으로 브랜드에 대해
+                자세히</span
+              >
+              <span>알 수 있게끔 디자인하여 제작하였습니다.</span>
+            </p>
+            <p class="sub">개인프로젝트 100%</p>
+            <p>작업기간 : 2022.08.13 ~ 08.24</p>
+          </div>
+          <div class="infor">
+            <h4>site information</h4>
+            <div class="infor_txt">
+              <p class="title">웹사이트 리뉴얼</p>
+              <p>PC 1440px</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="middle">
+        <h3>Design</h3>
+        <div class="design">
+          <div class="keyword">
+            <div class="key_txt">
+              <h4>keyword</h4>
+              <p>
+                <span>#깔끔한</span><span>#심플한</span><span>#모던한</span>
+              </p>
+            </div>
+            <p class="title">
+              룬느가 가진 아이덴티티를 잃지 않고 깔끔하고 모던한 느낌으로
+              디자인하였습니다.
+            </p>
+          </div>
+          <div class="color">
+            <h4>Color</h4>
+            <div class="color_box title">
+              <div class="code">
+                <p>#FFFFFF</p>
+              </div>
+              <div class="code">
+                <p>#CFC8C3</p>
+              </div>
+              <div class="code">
+                <p>#362706</p>
+              </div>
+            </div>
+          </div>
+          <div class="font">
+            <h4>Typography</h4>
+            <p class="title">
+              가독성이 좋고 깔끔한 느낌을 전달하기 위해 Noto Sans KR 서체를
+              사용하였습니다.
+            </p>
+            <ul id="font_box">
+              <li>Noto Sans KR</li>
+              <li>Bold</li>
+              <li>가</li>
+              <li>Regular</li>
+              <li>가</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section id="bottom">
+        <h3>Web <span>Publishing</span></h3>
+        <div class="bottom_box">
+          <div class="publishing">
+            <h4>Publishing</h4>
+            <ul id="list">
+              <li>Chrome 브라우저 최적화</li>
+              <li>
+                어떤 환경에서도 적용한 폰트를 확인할 수 있도록 구글 웹 폰트 적용
+              </li>
+              <li>position을 사용한 레이아웃 구현</li>
+              <li>상단 메뉴 마우스 오버시 드롭다운 메뉴 구현</li>
+              <li>
+                자바스크립트를 이용한 이미지 슬라이드 및 슬라이드 마우스 :hover
+                시 슬라이드 멈춤 구현
+              </li>
+              <li>
+                vw 가변 단위 값을 이용한 사용자별 환경, 디바이스 제약 해결
+              </li>
+              <li>스크롤 시 nav의 background-color 변경</li>
+              <li>background-attachment를 통한 스크롤 시 배경이미지 고정</li>
+            </ul>
+          </div>
+          <div class="problem">
+            <h4>Problem & Solution</h4>
+            <div class="size txt">
+              <p class="title">이미지 슬라이드 :hover시 변경되는 이미지 크기</p>
+              <p>
+                <span
+                  >컬렉션 슬라이드에 :hover 시 착용한 모습을 확인할 수 있도록
+                  이미지를 넣었는데 비율이 맞지</span
+                >
+                <span
+                  >않아 :hover 시 위 아래, 좌우로 이미지가 늘어나는 모습을
+                  확인할 수 있었습니다.</span
+                >
+                <span
+                  >이미지의 비율을 조정하여 이미지가 늘어나지 않도록
+                  수정하였습니다.</span
+                >
+              </p>
+            </div>
+            <div class="img">
+              <div class="txt">
+                <p class="title">연한 주요 글자 컬러로 인해 떨어지는 가독성</p>
+                <p>
+                  <span
+                    >주요 글자 색상을 흰색으로 해두었더니 배경색과의 대비가
+                    떨어져 글이 잘 읽히지 않았습니다.</span
+                  >
+                  <span
+                    >배경색상과 어울리는 진한 글자 색상으로 선택하여 가독성 좋게
+                    글이 읽힐 수 있도록 수정하였습니다.</span
+                  >
+                </p>
+              </div>
+            </div>
+            <div class="contents">
+              <div class="txt">
+                <p class="title">무한반복되지 않고 끊기는 슬라이드</p>
+                <p>
+                  <span
+                    >처음 슬라이드를 적용시키고 확인하였을 때 슬라이드가
+                    움직이나 무한으로 반복되지 않아</span
+                  >
+                  <span
+                    >이미지 슬라이드가 끝나면 아무것도 나타나지 않는 것을 확인할
+                    수 있었습니다.</span
+                  >
+                  <span
+                    >prepend, append를 통해 앞, 뒤에 요소를 추가하여 무한루프
+                    슬라이드를 구현하였습니다.</span
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="review">
+        <h4>Review</h4>
+        <div class="review_txt">
+          <p>
+            <span
+              >JavaScript를 적용시키는 과정에서 많은 시행착오를 겪고 구글링을
+              통해 해결해보고</span
+            >
+            <span
+              >어떻게 해야 움직임이 구현되는건지 많이 찾아보고 이해해보고자
+              노력하였습니다.</span
+            >
+            <span
+              >JavaScript를 적용하는 과정에서 아직 이해도가 많이 부족하다고 느껴
+              공부가 더 필요할 것 같습니다.</span
+            >
+          </p>
+          <p class="closing">
+            <span
+              >아직 완벽한 결과물을 완성하기에는 부족하다는 생각이 많이
+              들었습니다.</span
+            >
+            <span
+              >잘 이해했다고 생각했던 것들도 막상 적용시켜보니 생각했던것대로
+              이루어지지 않아 많은 고민을 한 프로젝트였습니다.</span
+            >
+            <span
+              >보완해야할 문제점을 파악하고 끈기를 가지고 완성했다는 것에 의의를
+              두고 싶습니다.</span
+            >
+          </p>
+        </div>
       </div>
-    </div>
-    <p class="view">
-      <a href="../../project/lunne/lunneindex.html" target="_blank">사이트 보러가기</a>
-    </p>
+      <p class="view">
+        <a href="../../project/lunne/lunneindex.html" target="_blank"
+          >사이트 보러가기</a
+        >
+      </p>
 
-    <p class="scroll"><a href="#">top</a></p>
-  </footer>
-</body>
-
+      <p class="scroll"><a href="#">top</a></p>
+    </footer>
+  </body>
 </html>

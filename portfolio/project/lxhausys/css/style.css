@@ -27,36 +27,82 @@ header .title>a:nth-child(2) img {
   width: 55%;
 }
 
-/* 메뉴 */
-nav #menu {
-  padding-bottom: 10px;
-  width: 100%;
+/* 햄버거 메뉴 */
+.wrapper{
+  width:100%;
+}
+.container{
+  width:100%;
+  border:1px solid #e1e1e1;
+}
+.head{
+  width:100%;
+  height:50px;
+  border-bottom:1px solid #e1e1e1;
+  position:relative;
+}
+.slide-open{
+  position:absolute;
+  top:0;
+  right:0;
+  width:50px;
+  height:50px;
+  cursor:pointer;
+}
+.burgur{
+right: 15px;
+top: 23px;
+position: absolute;
+width: 20px;
+height: 2px;
+background: #000000;
+}
+.burgur .top-line{
+width: 20px;
+height: 2px;
+background-color: #000000;
+bottom: -5px;
+content: '';
+position: absolute;
+right: 0;
+transition: transform .3s;
+
+}
+.burgur .bot-line {
+width: 20px;
+height: 2px;
+background-color: #000000;
+top: -5px;
+content: '';
+position: absolute;
+right: 0;
+transition: transform .3s;
 }
 
-nav #menu li {
-  display: inline-block;
-  width: 15%;
-  background-color: #fff;
-  position: relative;
+.burgur.on {
+width: 0;
 }
-
-nav #menu li a {
-  font-weight: bold;
-  font-size: 14px;
+.burgur.on .bot-line {
+transform: translateY(5px) rotate(135deg);
 }
-
-nav #menu li a img {
-  width: 80%;
-  vertical-align: baseline;
+.burgur.on .top-line{
+transform: translateY(-5px) rotate(-135deg);
 }
-
-nav #menu li:last-child a img {
-  margin-bottom: 3px;
+/* 상단 로고 */
+.logo{
+  padding-top:10px;
 }
-
-/* 소메뉴 */
-nav #menu li .sub_menu {
-  display: none;
+/* 슬라이드 이미지 */
+.body{
+  position:relative;
+  overflow:hidden;
+}
+.content{
+  height:100%;
+  font-size:30px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
 }
 
 #title_img {
@@ -99,19 +145,74 @@ nav #menu li .sub_menu {
   display: none;
 }
 
-/* 메인이미지 */
-main {
-  /* overflow: hidden; */
+/* 메뉴 */
+.slide{
+  width:100%;
+  position:absolute;
+  left:-100%;
+  top:0;
+  right:0;
+  bottom:0;
+  transition: left .3s;
 }
+.slide.on{
+  left:0;
+}
+.slide ul li{
+  display:inline-block;
+  width:100%;
+}
+nav #menu {
+  padding-top: 7%;
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+}
+nav #menu li a {
+  display: block;
+  padding:20px;
+}
+nav #menu li a:focus {
+ background-color: #E9E8E8;
+ border-bottom: 1px solid #373737;
+}
+
+nav #menu li {
+  text-align: left;
+}
+nav #menu .main_menu {
+  
+  border-bottom: 1px solid #373737;
+}
+nav #menu li a {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+nav #menu li a img {
+  width: 25%;
+  vertical-align: baseline;
+}
+
+nav #menu li:last-child a img {
+  margin-bottom: 3px;
+}
+
+/* 소메뉴 */
+nav #menu li .sub_menu a {
+  font-size: 16px;
+}
+
 
 /* 컨텐츠 공통 */
 main .sub_title {
   padding: 0 23px;
+  position: relative;
 }
 
 main .sub_title .more {
-  position: relative;
-  left: 135px;
+  position: absolute;
+  right: 30px; 
   margin-bottom: 10px;
 }
 
@@ -154,18 +255,9 @@ main .sub_title .border {
   border-top: 2px solid #ff5519;
   width: 60px;
   margin: 15px auto;
+  padding-bottom: 30px;
 }
 
-/* 캐러셀 버튼 */
-main #btns {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-}
-
-main #btns li {
-  cursor: pointer;
-}
 
 /* 이벤트 배너 */
 main .event {
@@ -173,106 +265,64 @@ main .event {
 }
 
 /* 제품소개 */
-.swiper-container {
-  height: 30vh;
-  border-radius: 7px;
-  --swiper-theme-color: #fff;
+.slider {
+  position: relative;
+  max-width: 1180px;
+  margin: 20px auto 0;
+  padding: 0 50px;
 }
-
-.swiper-slide {
-  text-align: center;
-  display: flex;
-  flex-wrap: wrap;
-  /* 내용을 중앙정렬 하기위해 flex 사용 */
-  align-items: center;
-  /* 위아래 기준 중앙정렬 */
+.slider .inner {
+  overflow: hidden;
+  margin-right: -1.333%;
+}
+.slider .swiper-slide {
+  display:flex;
+  flex-wrap:wrap;
   justify-content: center;
-  /* 좌우 기준 중앙정렬 */
 }
 
-.swiper-slide .product {
-  width: 100px;
+.slider .swiper-prev, .slider .swiper-next {
+  position: absolute;
+  top: 50%;
+  width: 35px;
+  height: 35px;
+  background:url('images/arrow.png') center center no-repeat;
+  background-size: cover;
+  text-indent: -999em;
+  cursor: pointer;
+  font-size: 0;
+}
+.slider .swiper-prev {
+  left: 0;
+  transform: translate(0,-50%);
+  background-image: url(../icon/chevron_left.svg);
+}
+.slider .swiper-next {
+  right:0;
+  transform: translate(0,-50%);
+  background-image: url(../icon/chevron_right.svg);
+}
+
+.slider .product {
+  width: 90px;
   background-color: #ededed;
   border-radius: 10px;
-  height: 100px;
+  height: 80px;
 }
-
-.swiper-slide img {
-  margin: 10px auto;
-  line-height: 100px;
-  width: 80%;
-  max-width: 100%;
-  /* 이미지 최대너비를 제한, 슬라이드에 이미지가 여러개가 보여질때 필요 */
-  /* 이 예제에서 필요해서 설정했습니다. 상황에따라 다를 수 있습니다. */
+.slider .list {
+  margin: 27px 15px;
 }
-
-
-
-/* #product_wrapper .swiper-wrapper .product img {
-  background-color: #f3f3f3;
-  width: 90px;
-  border-radius: 10px;
-  padding: 5px;
+.list p {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 16px;
 }
-
-main .swiper-wrapper .swiper_slide a .product p {
-  font-size: 14px;
-  padding-top: 5px;
+/* 더보기 위치 */
+main .expert,
+main .magazine,
+main .hausys_box {
+  padding-top: 30px;
 }
-
-main .swiper-wrapper .swiper_slide a p {
-  font-size: 18px;
-} */
-
-/* main .swiper-wrapper #icon4,
-main .swiper-wrapper #icon5,
-main .swiper-wrapper #icon6 {
-  padding-top: 25px;
-} */
-
-/* main #product_wrapper {
-  position: relative;
-  width: 100%;
-}
-
-main .swiper-wrapper {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-main .swiper-wrapper .swiper_slide {
-  padding: 0 10px;
-}
-
-#product_wrapper .swiper-wrapper .product img {
-  background-color: #f3f3f3;
-  width: 90px;
-  border-radius: 10px;
-  padding: 5px;
-}
-
-main .swiper-wrapper .swiper_slide a .product p {
-  font-size: 14px;
-  padding-top: 5px;
-}
-
-main .swiper-wrapper .swiper_slide a p {
-  font-size: 18px;
-}
-
-main .swiper-wrapper #icon4,
-main .swiper-wrapper #icon5,
-main .swiper-wrapper #icon6 {
-  padding-top: 25px;
-}
-
-main .swiper-wrapper #icon7_box,
-main .swiper-wrapper #icon8_box {
-  display: none;
-} */
-
 /* 전문가 시공사례 */
 main .expert {
   margin: 0;
@@ -361,35 +411,6 @@ main .lonchel {
   display: none;
 }
 
-/* 뉴스 캐러셀 버튼 */
-main .hausys_box {
-  position: relative;
-}
-
-main .bottom_left,
-main .bottom_right {
-  width: 37px;
-  background-color: #e7e7e7;
-  border-radius: 50%;
-}
-
-main .hausys_box .btn .bottom_left {
-  position: absolute;
-  top: 170px;
-  left: -10px;
-}
-
-main .hausys_box .btn .bottom_right {
-  margin-left: auto;
-  position: absolute;
-  top: 170px;
-  right: -10px;
-}
-
-main #news .news_wrapper>.more {
-  display: none;
-}
-
 /* 하우시스 뉴스 */
 main #news .news_wrapper #news_box1 {
   margin-top: 50px;
@@ -407,7 +428,6 @@ main .hausys_news #news_box1 .news_img {
   background-position: 50% 65%;
 }
 
-main #news_wrapper .more,
 main .hausys_box #news_box2,
 main .hausys_box #news_box3,
 main .hausys_box #news_box4 {

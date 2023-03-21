@@ -57,12 +57,14 @@ a {
 #modal > button:nth-of-type(2) {
   right: 0;
 }
+
 /* header 영역 */
 header {
   position: relative;
   overflow: hidden;
 }
 
+/* 메뉴 */
 nav {
   display: flex;
   justify-content: space-between;
@@ -76,6 +78,7 @@ nav h1 {
   background-color: #e6c637;
 }
 
+/* 햄버거 메뉴 */
 #check_box {
   display: none;
 }
@@ -303,6 +306,7 @@ header .day .size {
   padding-left: 10px;
 }
 
+/* 헤더 이미지 */
 header .festival {
   height: 48vh;
   position: absolute;
@@ -310,6 +314,8 @@ header .festival {
   left: 40%;
   z-index: 1;
 }
+
+/* NDA title */
 header .background h2 {
   font-family: "Pragmatica";
   font-weight: bold;
@@ -330,6 +336,7 @@ header .background h2 {
   overflow: hidden;
 }
 
+/* 백그라운드 이미지 */
 .message::after {
   width: 100%;
   height: 100%;
@@ -397,108 +404,40 @@ header .background h2 {
   padding-left: 15px;
 }
 
+/* 메인 컨텐츠 영역 */
 main {
   overflow: hidden;
 }
 
+/* 년도 슬라이드 */
 main .year_slide {
   display: none;
 }
-.banner {
-  margin-top: 100px;
-  position: relative;
-}
-.banner h2 {
-  font-family: "Pragmatica";
-  font-weight: bold;
-  font-size: 1.25rem;
-  margin-bottom: 50px;
-  text-align: center;
-}
-#dance_slide {
-  width: 600%;
-  display: flex;
-  /* border-top: 2px solid #fff; */
-  /* border-bottom: 2px solid #fff; */
-  /* padding: 30px 0; */
-  position: relative;
-}
 
-#dance_slide li {
-  width: 100%;
-  height: 100%;
-  /* margin: 0 20px; */
-  /* padding: 50px 40px; */
-  /* border-right: 2px solid #fff; */
-  cursor: pointer;
-  position: relative;
-}
-
-#dance_slide .slide_txt {
-  text-align: center;
-}
-
-#dance_slide .slide_txt h2 {
-  margin: 0;
-  padding: 20px 0 10px;
-}
-#dance_slide h2,
-#dance_slide p {
-  display: none;
-}
-#dance_slide li > img {
-  position: relative;
-}
-.slide-next,
-.slide-prev {
-  display: none;
-  position: absolute;
-  top: 50%;
-  cursor: pointer;
-}
-.slide-next {
-  right: 20px;
-}
-.slide-prev {
-  left: 20px;
-}
-/* .nda {
-  font-family: "Pragmatica";
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #1b1b1b;
-  width: 249px;
-  height: 44px;
-  border-radius: 36px;
-  margin: -20px auto;
-
-  cursor: pointer;
-
-  position: relative;
-  z-index: 1;
-}
-
-.nda img {
-  padding-left: 20px;
-} */
-
+/* NDA 프로그램 */
 #program {
   margin-top: 80px;
   text-align: center;
+  padding: 0 50px;
 }
-
 #program h3 {
   font-family: "Pragmatica";
   font-weight: bold;
   font-size: 1.25rem;
   margin-bottom: 70px;
 }
-
-#program iframe {
+#program .dance1 {
+  /* width: 80%; */
+  margin: 0 auto;
+}
+#program .myPlayer {
+  width: 100%;
+  margin: 0 auto;
+}
+/* #program .player {
   width: 300px;
   height: 170px;
-}
+} */
 
 #program .name {
   font-family: "Pragmatica";
@@ -514,6 +453,7 @@ main .year_slide {
   padding-top: 15px;
   padding-bottom: 100px;
 }
+
 /* 뉴스 */
 .newswrapper {
   position: relative;
@@ -546,8 +486,7 @@ table tr {
   border-bottom: 1px solid rgb(168, 168, 168);
 }
 td {
-  /* border: 1px solid #ccc; */
-  padding: 15px; /* 테두리 안쪽 여백 */
+  padding: 15px;
   text-align: center;
 }
 .news th {
@@ -602,7 +541,6 @@ footer #footer_menu {
 footer .icon {
   width: 100%;
   display: flex;
-  /* justify-content: center; */
   align-items: center;
   position: absolute;
   top: 18vh;

@@ -1,233 +1,261 @@
 <!DOCTYPE html>
 <html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalble=no"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport"
-    content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalble=no" />
+    <!-- favicon -->
+    <link rel="shortcut icon" href="../../../favicon/FAVICON.png" />
+    <title>LX 하우시스</title>
+    <!-- minireset -->
+    <link rel="stylesheet" href="../../../common/minireset.css" />
+    <!-- font.css -->
+    <link rel="stylesheet" href="./css/fonts.css" />
+    <!-- style.css(모바일) -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- pc.css(pc버전) -->
+    <link rel="stylesheet" href="./css/pc.css" />
+    <!-- swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+    <!-- jQuery -->
+    <script src="../../../common/jquery-3.6.0.min.js"></script>
+    <!-- script.js -->
+    <script src="./css/script.js" defer></script>
+  </head>
 
-  <!-- favicon -->
-  <link rel="shortcut icon" href="../../../favicon/FAVICON.png">
-  <title>LX 하우시스</title>
-  <!-- minireset -->
-  <link rel="stylesheet" href="../../../common/minireset.css" />
-  <!-- font.css -->
-  <link rel="stylesheet" href="./css/fonts.css" />
-  <!-- style.css(모바일) -->
-  <link rel="stylesheet" href="./css/style.css" />
-  <!-- pc.css(pc버전) -->
-  <link rel="stylesheet" href="./css/pc.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
-  <!-- script.js -->
-  <script src="./css/script.js" defer></script>
-</head>
-
-<body>
-  <header>
-    <div class="top">
-      <div class="title">
-        <a href="#"><img src="./images/logo.png" alt="로고" /></a>
-        <a href="#"><img src="./icon/menu.svg" alt="메뉴" /></a>
+  <body>
+    <header>
+      <div class="wrapper">
+        <div class="container">
+           <div class="head">
+             <div class="slide-open" id="slide-open">
+                <span class="burgur" id="burgur">
+                <span class="top-line"></span>
+                <span class="bot-line"></span>
+             </span>
+             </div>
+            
+             <div class="logo">
+              <img src="./images/logo.png" alt="로고" />
+             </div>
+           </div>
+           <div class="body">
+             <div class="content">
+              <div id="title_img">
+                <ul id="title">
+                  <li class="slide_item img1 active">img1</li>
+                  <li class="slide_item img2">img2</li>
+                  <li class="slide_item img3">img3</li>
+                </ul>
+                <ul id="btns">
+                  <li class="prev">&lt;</li>
+                  <li class="next">&gt;</li>
+                </ul>
+              </div>
+             </div>
+             <div class="slide" id="slide">
+               <nav>
+                <ul id="menu">
+                  <li class="main_menu">
+                    <a href="#">기업소개</a>
+                    <ul class="sub_menu">
+                      <li><a href="#">기업소개</a></li>
+                      <li><a href="#">LX 경영철학</a></li>
+                      <li><a href="#">R&D</a></li>
+                      <li><a href="#">디자인</a></li>
+                      <li><a href="#">지속가능경영</a></li>
+                      <li><a href="#">홍보센터</a></li>
+                    </ul>
+                  </li>
+                  <li class="main_menu">
+                    <a href="#">제품안내</a>
+                    <ul class="sub_menu">
+                      <li><a href="#">건축장식자재</a></li>
+                      <li><a href="#">LONCHEL</a></li>
+                      <li><a href="#">자동차소재부품</a></li>
+                      <li><a href="#">고기능소재</a></li>
+                    </ul>
+                  </li>
+                  <li class="main_menu">
+                    <a href="#">투자정보</a>
+                    <ul class="sub_menu">
+                      <li><a href="#">경영정보</a></li>
+                      <li><a href="#">주식정보</a></li>
+                      <li><a href="#">재무정보</a></li>
+                      <li><a href="#">공시/전자공고</a></li>
+                      <li><a href="#">IR 활동</a></li>
+                      <li><a href="#">IR 자료실</a></li>
+                    </ul>
+                  </li>
+                  <li class="main_menu">
+                    <a href="#">인재채용</a>
+                    <ul class="sub_menu">
+                      <li><a href="#">인사제도</a></li>
+                      <li><a href="#">지원가이드</a></li>
+                      <li><a href="#">채용공고</a></li>
+                    </ul>
+                  </li>
+                  <li class="main_menu">
+                    <a href="#"><img src="./images/logo03.png" alt="로고" /></a>
+                  </li>
+                  <li class="main_menu">
+                    <a href="#"><img src="./images/lonchel.png" alt="론첼" /></a>
+                  </li>
+                  <li class="main_menu">
+                    <a href="#">가까운 매장 찾기</a>
+                  </li>
+                  <li class="main_menu">
+                    <a href="#">고객센터</a>
+                  </li>
+                </ul> 
+              </nav>
+             </div>
+           </div>
+        </div> 
       </div>
-      <nav>
-        <ul id="menu">
-          <li>
-            <a href="#">기업소개</a>
-            <ul class="sub_menu">
-              <li><a href="#">기업소개</a></li>
-              <li><a href="#">LX 경영철학</a></li>
-              <li><a href="#">R&D</a></li>
-              <li><a href="#">디자인</a></li>
-              <li><a href="#">지속가능경영</a></li>
-              <li><a href="#">홍보센터</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="#">제품안내</a>
-            <ul class="sub_menu">
-              <li><a href="#">건축장식자재</a></li>
-              <li><a href="#">LONCHEL</a></li>
-              <li><a href="#">자동차소재부품</a></li>
-              <li><a href="#">고기능소재</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="#">투자정보</a>
-            <ul class="sub_menu">
-              <li><a href="#">경영정보</a></li>
-              <li><a href="#">주식정보</a></li>
-              <li><a href="#">재무정보</a></li>
-              <li><a href="#">공시/전자공고</a></li>
-              <li><a href="#">IR 활동</a></li>
-              <li><a href="#">IR 자료실</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="#">인재채용</a>
-            <ul class="sub_menu">
-              <li><a href="#">인사제도</a></li>
-              <li><a href="#">지원가이드</a></li>
-              <li><a href="#">채용공고</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="#"><img src="./images/logo03.png" alt="로고" /></a>
-          </li>
-          <li>
-            <a href="#"><img src="./images/lonchel.png" alt="론첼" /></a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-
-    <div id="title_img">
-      <ul id="title">
-        <li class="slide_item img1 active">img1</li>
-        <li class="slide_item img2">img2</li>
-        <li class="slide_item img3">img3</li>
-      </ul>
-      <ul id="btns">
-        <li class="prev">&lt;</li>
-        <li class="next">&gt;</li>
-      </ul>
-    </div>
-  </header>
-  <main>
-    <div id="product_wrapper" class="sub_title">
-      <p>LX Z:IN의 다양한 제품을 만나보세요</p>
-      <h3>LX Z:IN PRODUCT</h3>
-      <div class="border">border</div>
-      <div class="swiper-container">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <a href="#">
-              <div id="icon1" class="product">
-                <img src="./icon/kitchen.png" alt="주방" />
+    </header>
+    <main>
+      <div id="product_wrapper" class="sub_title">
+        <p>LX Z:IN의 다양한 제품을 만나보세요</p>
+        <h3>LX Z:IN PRODUCT</h3>
+        <div class="border">border</div>
+        <!-- swiper-slide -->
+        <div class="slider">
+          <div class="inner">
+            <div class="swiper-wrapper">
+              <div class="list">
+                <a href="#">
+                  <div id="icon1" class="product">
+                    <img src="./icon/kitchen.png" alt="주방" />
+                  </div>
+                  <p>주방</p>
+                </a>
               </div>
-              <p>주방</p>
-            </a>
-          </div>
-          <div class="swiper-slide">
-            <a href="#">
-              <div id="icon2" class="product">
-                <img src="./icon/bath.png" alt="욕실" />
+              <div class="list">
+                <a href="#">
+                  <div id="icon2" class="product">
+                    <img src="./icon/bath.png" alt="욕실" />
+                  </div>
+                  <p>욕실</p>
+                </a>
               </div>
-              <p>욕실</p>
-            </a>
-          </div>
-          <div class="swiper-slide">
-            <a href="#">
-              <div id="icon3" class="product">
-                <img src="./icon/cloth.png" alt="수납" />
+              <div class="list">
+                <a href="#">
+                  <div id="icon3" class="product">
+                    <img src="./icon/cloth.png" alt="수납" />
+                  </div>
+                  <p>수납</p>
+                </a>
               </div>
-              <p>수납</p>
-            </a>
-          </div>
-          <div class="swiper-slide">
-            <a href="#">
-              <div id="icon4" class="product">
-                <img src="./icon/chang.png" alt="창호" />
+              <div class="list">
+                <a href="#">
+                  <div id="icon4" class="product">
+                    <img src="./icon/chang.png" alt="창호" />
+                  </div>
+                  <p>창호</p>
+                </a>
               </div>
-              <p>창호</p>
-            </a>
-          </div>
-          <div class="swiper-slide">
-            <a href="#">
-              <div id="icon5" class="product">
-                <img src="./icon/glass.png" alt="유리" />
+              <div class="list">
+                <a href="#">
+                  <div id="icon5" class="product">
+                    <img src="./icon/glass.png" alt="유리" />
+                  </div>
+                  <p>유리</p>
+                </a>
               </div>
-              <p>유리</p>
-            </a>
-          </div>
-          <div class="swiper-slide">
-            <a href="#">
-              <div id="icon6" class="product">
-                <img src="./icon/wall.png" alt="벽지" />
+              <div class="list">
+                <a href="#">
+                  <div id="icon6" class="product">
+                    <img src="./icon/wall.png" alt="벽지" />
+                  </div>
+                  <p>벽지</p>
+                </a>
               </div>
-              <p>벽지</p>
-            </a>
-          </div>
-          <div class="swiper-slide">
-            <a href="#">
-              <div id="icon7" class="product">
-                <img src="./icon/home.png" alt="주거" />
+              <div class="list">
+                <a href="#">
+                  <div id="icon7" class="product">
+                    <img src="./icon/home.png" alt="주거" />
+                  </div>
+                  <p>바닥재(주거)</p>
+                </a>
               </div>
-              <p>바닥재(주거)</p>
-            </a>
-          </div>
-          <div class="swiper-slide">
-            <a href="#">
-              <div id="icon8" class="product">
-                <img src="./icon/store.png" alt="상업" />
+              <div class="list">
+                <a href="#">
+                  <div id="icon8" class="product">
+                    <img src="./icon/store.png" alt="상업" />
+                  </div>
+                  <p>바닥재(상업)</p>
+                </a>
               </div>
-              <p>바닥재(상업)</p>
-            </a>
-          </div>
-          <div class="swiper-slide">
-            <a href="#">
-              <div id="icon9" class="product">
-                <img src="./icon/stormdoor.png" alt="중문" />
+              <div class="list">
+                <a href="#">
+                  <div id="icon9" class="product">
+                    <img src="./icon/stormdoor.png" alt="중문" />
+                  </div>
+                  <p>중문</p>
+                </a>
               </div>
-              <p>중문</p>
-            </a>
-          </div>
-          <div class="swiper-slide">
-            <a href="#">
-              <div id="icon10" class="product">
-                <img src="./icon/door.png" alt="도어" />
+              <div class="list">
+                <a href="#">
+                  <div id="icon10" class="product">
+                    <img src="./icon/door.png" alt="도어" />
+                  </div>
+                  <p>도어</p>
+                </a>
               </div>
-              <p>도어</p>
-            </a>
-          </div>
-          <div class="swiper-slide">
-            <a href="#">
-              <div id="icon11" class="product">
-                <img src="./icon/marble.png" alt="인조대리석" />
+              <div class="list">
+                <a href="#">
+                  <div id="icon11" class="product">
+                    <img src="./icon/marble.png" alt="인조대리석" />
+                  </div>
+                  <p>인조대리석</p>
+                </a>
               </div>
-              <p>인조대리석</p>
-            </a>
-          </div>
-          <div class="swiper-slide">
-            <a href="#">
-              <div id="icon12" class="product">
-                <img src="./icon/stone.png" alt="이스톤&포셀린" />
+              <div class="list">
+                <a href="#">
+                  <div id="icon12" class="product">
+                    <img src="./icon/stone.png" alt="이스톤&포셀린" />
+                  </div>
+                  <p>이스톤&포셀린</p>
+                </a>
               </div>
-              <p>이스톤&포셀린</p>
-            </a>
-          </div>
-          <div class="swiper-slide">
-            <a href="#">
-              <div id="icon13" class="product">
-                <img src="./icon/film.png" alt="인테리어필름" />
+              <div class="list">
+                <a href="#">
+                  <div id="icon13" class="product">
+                    <img src="./icon/film.png" alt="인테리어필름" />
+                  </div>
+                  <p>인테리어필름</p>
+                </a>
               </div>
-              <p>인테리어필름</p>
-            </a>
-          </div>
-          <div class="swiper-slide">
-            <a href="#">
-              <div id="icon14" class="product">
-                <img src="./icon/timber.png" alt="강화목재" />
+              <div class="list">
+                <a href="#">
+                  <div id="icon14" class="product">
+                    <img src="./icon/timber.png" alt="강화목재" />
+                  </div>
+                  <p>강화목재</p>
+                </a>
               </div>
-              <p>강화목재</p>
-            </a>
-          </div>
-          <div class="swiper-slide">
-            <a href="#">
-              <div id="icon15" class="product">
-                <img src="./icon/insulator.png" alt="단열재" />
+              <div class="list">
+                <a href="#">
+                  <div id="icon15" class="product">
+                    <img src="./icon/insulator.png" alt="단열재" />
+                  </div>
+                  <p>단열재</p>
+                </a>
               </div>
-              <p>단열재</p>
-            </a>
+            </div>
           </div>
+          <div class="swiper-prev">이전</div>
+          <div class="swiper-next">다음</div>
         </div>
-        <!-- 네비게이션 -->
-        <div class="swiper-button-next"></div><!-- 다음 버튼 (오른쪽에 있는 버튼) -->
-        <div class="swiper-button-prev"></div><!-- 이전 버튼 -->
-
-        <!-- 페이징 -->
-        <div class="swiper-pagination"></div>
       </div>
       <img src="./images/banner-1.jpg" alt="이벤트배너" class="event" />
       <div id="expert_wrapper" class="sub_title">
@@ -235,7 +263,8 @@
         <h3>전문가 시공사례</h3>
         <div class="border">border</div>
         <div class="more">
-          <a href="#">더보기
+          <a href="#"
+            >더보기
             <img src="./icon/arrow_right.svg" alt="더보기" />
           </a>
         </div>
@@ -268,7 +297,8 @@
         <h3>라이프 매거진</h3>
         <div class="border">border</div>
         <div class="more">
-          <a href="#">더보기
+          <a href="#"
+            >더보기
             <img src="./icon/arrow_right.svg" alt="더보기" />
           </a>
         </div>
@@ -346,26 +376,17 @@
         <h3>하우시스 뉴스</h3>
         <div class="border">border</div>
         <div class="more">
-          <a href="#">더보기
+          <a href="#"
+            >더보기
             <img src="./icon/arrow_right.svg" alt="더보기" />
           </a>
         </div>
         <div class="hausys_box">
-          <div class="btn">
-            <div class="bottom_left">
-              <img src="./icon/chevron_left.svg" alt="왼쪽" />
-            </div>
-            <div class="bottom_right">
-              <img src="./icon/chevron_right.svg" alt="오른쪽" />
-            </div>
-          </div>
 
           <div class="hausys_news">
             <div id="news_box1" class="pic">
               <a href="#">
-                <div class="news_img">
-                  인제대학교 일자리 창출
-                </div>
+                <div class="news_img">인제대학교 일자리 창출</div>
                 <p class="bold">LX하우시스, 인제대학교와 청년 일자리 창출!</p>
                 <p class="color">
                   LX하우시스가 인제대학교와 손잡고 국내 인테리어 산업 인력
@@ -406,32 +427,28 @@
           </div>
         </div>
       </div>
-  </main>
-  <footer>
-    <div class="contact">
-      <img src="./images/logo.png" alt="footerlogo" />
-      <ul id="footer_gnb">
-        <li><a href="#">CONTACT US</a></li>
-        <li><a href="#">이용약관</a></li>
-        <li><a href="#">개인정보 처리방침</a></li>
-      </ul>
-      <div class="num">
-        <address>서울시 중구 후암로 98</address>
-        <p>080 - 005 - 4000, 1544 - 1893</p>
-        <p>평일 09:00 ~ 17:30 / 토요일, 일요일, 공휴일 휴무</p>
+    </main>
+    <footer>
+      <div class="contact">
+        <img src="./images/logo.png" alt="footerlogo" />
+        <ul id="footer_gnb">
+          <li><a href="#">CONTACT US</a></li>
+          <li><a href="#">이용약관</a></li>
+          <li><a href="#">개인정보 처리방침</a></li>
+        </ul>
+        <div class="num">
+          <address>서울시 중구 후암로 98</address>
+          <p>080 - 005 - 4000, 1544 - 1893</p>
+          <p>평일 09:00 ~ 17:30 / 토요일, 일요일, 공휴일 휴무</p>
+        </div>
+        <div class="shortcut">
+          <p>won980@naver.com</p>
+          <p><a href="#">포트폴리오로 바로가기</a></p>
+        </div>
       </div>
-      <div class="shortcut">
-        <p>won980@naver.com</p>
-        <p><a href="#">포트폴리오로 바로가기</a></p>
+      <div class="copyright">
+        copyright © 2022 lx hausys. all rights reserved
       </div>
-    </div>
-    <div class="copyright">
-      copyright © 2022 lx hausys. all rights reserved
-    </div>
-  </footer>
-
-
-</body>
-
-
+    </footer>
+  </body>
 </html>

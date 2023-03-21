@@ -18,15 +18,14 @@
 /* 마우스 커서 */
 .mouse {
   position: absolute;
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
   top: 10%;
   left: 10%;
-  border: 2px solid #000;
+  border: 2px solid #247291;
   border-radius: 50%;
   z-index: 1000;
 }
-
 body {
   background-color: #e1dfdd;
   font-family: "NanumSquare";
@@ -90,13 +89,13 @@ nav p span {
   margin: 10px 0;
 }
 
-nav .lx {
+nav .pic {
   text-indent: -9999px;
   margin-top: 100px;
   width: 1130px;
   height: 575px;
   border-radius: 245px;
-  background: url(../lxhausys/images/lxhausys.jpg) no-repeat 50% / cover;
+  background: url(../nda/ndatitle.png) no-repeat 50% / cover;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -172,7 +171,7 @@ main #middle {
 
 #middle .design .key_txt p {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
 }
 
 .design .title {
@@ -212,43 +211,45 @@ main #middle {
 }
 
 .color .color_box .code:nth-child(1) {
-  background-color: #f5f5f5;
+  background-color: #e63772;
+  color: #fff;
 }
 
 .color .color_box .code:nth-child(2) {
-  background-color: #ff5519;
-  color: #fff;
+  background-color: #e6c637;
 }
 
 .color .color_box .code:nth-child(3) {
-  background-color: #1c1c1c;
+  background-color: #172774;
   color: #fff;
 }
 
-.font #font_box {
+.font .font_box {
   display: flex;
   align-items: center;
   margin-top: 60px;
 }
 
-.font #font_box li {
+.font .font_box li {
   padding: 0 10px;
 }
 
-.font #font_box li:nth-child(1) {
+.font .font_box li:nth-child(1) {
   margin-right: 70px;
   padding: 0;
 }
 
-.font #font_box li:nth-child(2n + 1) {
+.font .font_box li:nth-child(2n + 1) {
   font-size: 30px;
 }
 
-.font #font_box li:nth-child(2),
-.font #font_box li:nth-child(3) {
+.font .font_box li:nth-child(2),
+.font .font_box li:nth-child(3) {
   font-weight: bold;
 }
-
+.font .en li:nth-child(1) {
+  padding-right: 1.8vw;
+}
 #bottom {
   margin-top: 250px;
   display: flex;

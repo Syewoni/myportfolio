@@ -1,6 +1,7 @@
 @charset "utf-8";
 
 @media (min-width: 768px) {
+  /* 모달창 */
   #modal {
     font-size: 16px;
     width: 600px;
@@ -22,6 +23,8 @@
     padding: 15px;
     font-size: 16px;
   }
+
+  /* 메뉴 */
   h1 {
     width: 410px;
     height: 70px;
@@ -92,6 +95,8 @@
     top: 61.3vh;
     left: 10vw;
   }
+
+  /* title 이미지 */
   header .festival {
     /* width: 70%; */
     height: 60%;
@@ -139,56 +144,31 @@
   .with p {
     font-size: 1.5rem;
   }
+
   /* 년도 슬라이드 */
   main .year_slide {
     display: block;
-    /* overflow-x: hidden;
-    overflow-y: hidden;
-    position: relative;
-    width: 100%;
-    max-width: 100%;
-    height: auto; */
   }
-  main .year_slide .track {
+  .year_slide .slide_inner {
     display: flex;
     align-items: center;
-    animation: marquee 40s linear infinite;
   }
   main .year_slide h4 {
     font-size: 100px;
     font-weight: 100;
-    margin: 0 50px;
+    margin: 0 30px;
   }
   main .year_slide img {
     margin-top: 20px;
     width: 82px;
     height: 82px;
   }
-  /* 움직이는 텍스트 */
 
-  @keyframes marquee {
-    0% {
-      left: 0;
-    }
-    100% {
-      left: -100%;
-    }
+  /* NDA 프로그램 */
+  #program {
+    margin-top: 25vh;
   }
-
-  .year_slide .slide_wrapper {
-    overflow: hidden;
-  }
-
-  .year_slide .slide_wrapper .track {
-    position: relative;
-    display: flex;
-    width: 200%;
-  }
-
-  .year_slide .slide_wrapper .track:nth-child(1) {
-    animation: marquee 20s linear infinite;
-  }
-  .banner h3,
+  .newsname,
   #program h3 {
     font-size: 1.5rem;
   }
@@ -202,6 +182,8 @@
   #program .day span {
     display: inline-block;
   }
+
+  /* NDA 뉴스 */
   .newswrapper {
     margin-bottom: 150px;
   }
@@ -212,9 +194,7 @@
   .news td:nth-of-type(2) {
     display: inline-block;
     text-align: left;
-    /* width: 30%; */
   }
-
   .news td:nth-of-type(3) {
     width: 10%;
   }
@@ -225,6 +205,8 @@
   .newswrapper .more a {
     font-size: 1rem;
   }
+
+  /* footer 영역 */
   footer {
     font-size: 1.3rem;
   }
@@ -233,6 +215,8 @@
     text-align: center;
     margin-top: 120px;
   }
+
+  /* sns 아이콘 */
   footer .icon {
     left: auto;
     right: -70vw;
@@ -241,6 +225,8 @@
   footer .icon img {
     width: 40%;
   }
+
+  /* 포트폴리오 바로가기 */
   footer .shortcut {
     border: none;
     position: absolute;

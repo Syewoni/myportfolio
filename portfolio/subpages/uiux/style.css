@@ -12,8 +12,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #303030;
-  border-radius: 10px;
+  background-color: #247291;
 }
 
 /* 마우스 커서 */
@@ -53,14 +52,19 @@ h2 {
 header {
   width: 100%;
   /* height: 80vh; */
-  height: 90vh;
+  height: 100vh;
   background-color: #303030;
   color: #fff;
   padding: 70px 150px;
   position: relative;
   overflow: hidden;
 }
-
+header a {
+  display: block;
+}
+header a:hover {
+  color: #247291;
+}
 nav #menu {
   display: flex;
   justify-content: space-between;
@@ -90,7 +94,7 @@ header img {
 }
 
 .header_txt #infor {
-  width: 20vw;
+  /* width: 20vw; */
 }
 
 .header_txt #infor li {
@@ -113,7 +117,7 @@ header img {
 /* main 영역 */
 main {
   background-color: #e1dfdd;
-  padding: 150px 250px;
+  padding: 150px 180px;
 }
 
 main h3 {
@@ -129,10 +133,14 @@ main h3 {
 /* overview */
 #overview {
   display: flex;
-  align-items: flex-start;
+  /* align-items: flex-start; */
+  align-items: baseline;
   /* justify-content: space-between; */
 }
-
+#overview h2 {
+  /* position: sticky;
+  top: 0; */
+}
 #overview .wrapper {
   padding-left: 264px;
 }
@@ -150,6 +158,7 @@ main h3 {
 }
 
 .wrapper .goal p span {
+  font-size: 1.1rem;
   padding: 5px 0;
 }
 
@@ -166,9 +175,13 @@ main h3 {
 #task {
   margin-top: 211px;
   display: flex;
+  /* position: relative; */
   /* justify-content: space-between */
 }
-
+#task h2 {
+  /* position: sticky;
+  top: 0; */
+}
 #task .role {
   padding-left: 292px;
 }
@@ -178,13 +191,15 @@ main h3 {
   display: flex;
   padding: 40px 0;
 }
-
+#task .role {
+  /* font-size: 1rem; */
+}
 #task .task_box:nth-of-type(1) p:nth-child(1) {
-  padding-right: 130px;
+  padding-right: 7vw;
 }
 
 #task .task_box:nth-of-type(2) p:nth-child(1) {
-  padding-right: 94px;
+  padding-right: 5.5vw;
 }
 
 #task .task_box:nth-of-type(3) p:nth-child(1) {
@@ -332,8 +347,8 @@ main h3 {
   font-weight: bold;
 }
 
-.font .ko>p,
-.font .en>p {
+.font .ko > p,
+.font .en > p {
   padding-bottom: 14px;
 }
 
@@ -460,7 +475,9 @@ footer {
 footer #review {
   background-color: #303030;
   border-radius: 268px 268px 0 0;
-  padding: 214px 230px 140px;
+  border-radius: 100px 100px 0 0;
+  /* padding: 214px 230px 140px; */
+  padding: 120px 0;
 }
 
 footer #review h2 {
@@ -469,6 +486,7 @@ footer #review h2 {
 
 #review .review_box {
   display: flex;
+  justify-content: center;
   align-items: baseline;
 }
 

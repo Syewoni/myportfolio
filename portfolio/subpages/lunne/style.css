@@ -12,8 +12,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #303030;
-  border-radius: 10px;
+  background-color: #247291;
 }
 
 /* 마우스 커서 */
@@ -115,6 +114,8 @@ nav .title_img {
 main {
   padding-top: 500px;
   width: 100%;
+  overflow: hidden;
+  position: relative;
 }
 
 /* 프로젝트 소개 */
@@ -307,6 +308,7 @@ main #middle {
 footer {
   /* background-color: #303030; */
   color: #fff;
+  position: relative;
 }
 
 footer h4 {
@@ -361,14 +363,15 @@ footer .view a:hover {
   height: 80px;
   border-radius: 50%;
   z-index: 1000;
-  position: fixed;
-  right: 50px;
+  position: absolute;
   bottom: 20px;
-  background-color: #607EAA;
+  right: 20px;
+  background-color: #247291;
 }
 
 .scroll a {
-  color: #000;
+  /* color: #000; */
+  color: #fff;
   font-size: 1.6rem;
   display: block;
   text-transform: uppercase;

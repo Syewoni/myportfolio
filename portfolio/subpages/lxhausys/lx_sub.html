@@ -1,205 +1,230 @@
 <!DOCTYPE html>
 <html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalble=no"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport"
-    content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalble=no" />
+    <!-- favicon -->
+    <link rel="shortcut icon" href="../../../favicon/FAVICON.png" />
 
-  <!-- favicon -->
-  <link rel="shortcut icon" href="../../../favicon/FAVICON.png" />
+    <title>Project01 LxHausys</title>
 
-  <title>Project01 LxHausys</title>
+    <!-- minireset 연결 -->
+    <link rel="stylesheet" href="../../../common/minireset.css" />
+    <!-- 웹폰트 연결 -->
+    <link rel="stylesheet" href="../../project/lxhausys/css/fonts.css" />
+    <link rel="stylesheet" href="../../mainpage/css/fonts.css" />
+    <!-- style.css -->
+    <link rel="stylesheet" href="./style.css" />
+    <!-- jQuery -->
+    <script src="../../../common/jquery-3.6.0.min.js"></script>
+    <script src="./script.js" defer></script>
+  </head>
 
-  <!-- minireset 연결 -->
-  <link rel="stylesheet" href="../../../common/minireset.css" />
-  <!-- 웹폰트 연결 -->
-  <link rel="stylesheet" href="../../project/lxhausys/css/fonts.css" />
-  <link rel="stylesheet" href="../../mainpage/css/fonts.css" />
-  <!-- style.css -->
-  <link rel="stylesheet" href="./style.css" />
-  <!-- jQuery -->
-  <link rel="stylesheet" href="../../../common/jquery-3.6.0.min.js">
-  <script src="./script.js" defer></script>
-</head>
-
-<body>
-  <div class="mouse"></div>
-  <header>
-    <nav>
-      <ul id="menu">
-        <li>View project 01</li>
-        <li>
-          <a href="https://syewoni.github.io/myportfolio/">포트폴리오로 돌아가기</a>
-        </li>
-      </ul>
-      <h1>Responsible web</h1>
-      <h2>LX 하우시스</h2>
-      <p>
-        <span>머무는 공간을 장식하는 인테리어 자재, 자동차 원단 및 경량화 부품 등
-          차별화된 기능과</span>
-        <span>디자인으로 건강하고 아름다운 생활 공간을 제공하는 기업</span>
-      </p>
-      <div class="lx">lx 하우시스 소개 이미지</div>
-    </nav>
-  </header>
-  <main>
-    <section id="top">
-      <h3>LX<span>HAUSYS</span></h3>
-      <div class="top_txt">
-        <div class="overview">
-          <h4>overview</h4>
-          <p class="title">LX 하우시스 홈페이지 리디자인</p>
-          <p>
-            국내 인테리어 자재 기업인 LX 하우시스의 홈페이지를 리디자인
-            하였습니다 기업 소개와 쇼핑몰이
-            <span>분리되어 있던 페이지를 합쳐 주요 정보를 한페이지 안에서 확인할
-              수 있도록 스크롤 형태로 제작하였습니다.</span>
-          </p>
-          <p class="sub">개인프로젝트 100%</p>
-          <p>작업기간 : 2022.07.04 ~ 07.19</p>
-        </div>
-        <div class="infor">
-          <h4>site information</h4>
-          <div class="infor_txt">
-            <p class="title">반응형 웹사이트</p>
-            <p>PC 1280px / Mobile 375px</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="middle">
-      <h3>Design</h3>
-      <div class="design">
-        <div class="keyword">
-          <div class="key_txt">
-            <h4>keyword</h4>
-            <p>
-              <span>#깔끔한</span><span>#직관적인</span><span>#간결한</span>
-            </p>
-          </div>
-          <p class="title">
-            기존 웹 사이트의 깔끔함은 유지하되, 주요 정보는 한 페이지 안에서
-            확인할 수 있도록 하였습니다.
-            <span>LX 하우시스 기업의 아이덴티티를 잃지 않도록 직관적이고 간결하게
-              디자인하였습니다.</span>
-          </p>
-        </div>
-        <div class="color">
-          <h4>Color</h4>
-          <div class="color_box title">
-            <div class="code">
-              <p>#f5f5f5</p>
-            </div>
-            <div class="code">
-              <p>#ff5519</p>
-            </div>
-            <div class="code">
-              <p>#1c1c1c</p>
-            </div>
-          </div>
-        </div>
-        <div class="font">
-          <h4>Typography</h4>
-          <p class="title">
-            가독성이 좋고 깔끔한 느낌을 전달하기 위해 Pretendard 서체를
-            사용하였습니다.
-          </p>
-          <ul id="font_box">
-            <li>Pretendard</li>
-            <li>Bold</li>
-            <li>가</li>
-            <li>Regular</li>
-            <li>가</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-    <section id="bottom">
-      <h3>Web <span>Publishing</span></h3>
-      <div class="bottom_box">
-        <div class="publishing">
-          <h4>Publishing</h4>
-          <ul id="list">
-            <li>Chrome 브라우저 최적화</li>
-            <li>
-              어떤 환경에서도 적용한 폰트를 확인할 수 있도록 font.css를 사용한
-              웹 폰트 적용
-            </li>
-            <li>flex와 position을 사용한 레이아웃 구현</li>
-            <li>상단 메뉴 마우스 오버시 드롭다운 메뉴 구현</li>
-            <li>
-              디바이스의 제약 없이 사용할 수 있도록 미디어 쿼리를 이용한
-              반응형 웹 제작
-            </li>
-            <li>슬라이드 라이브러라 Swiper를 이용한 이미지 슬라이드</li>
-            <li>
-              vw 등 가변 단위 값을 이용한 사용자별 환경, 디바이스 제약 해결
-            </li>
-          </ul>
-        </div>
-        <div class="problem">
-          <h4>Problem & Solution</h4>
-          <div class="size txt">
-            <p class="title">
-              모바일 버전으로 확인했을 때의 다소 커다란 텍스트 크기
-            </p>
-            <p>
-              포토샵을 이용해 제작한 디자인 시안의 텍스트 크기를 그대로
-              적용하고 모바일 버전에서
-              <span>확인해보니, 폰트의 크기가 다소 커보이는 부분이 있어 폰트의
-                사이즈를 다시 조절하였습니다.</span>
-            </p>
-          </div>
-          <div class="img">
-            <div class="txt">
-              <p class="title">처음으로 swiper 적용해보기</p>
-              <p>
-                제품소개를 슬라이드로 구현하고싶어 이것 저것 도전해보았으나 적용에 어려움을 겪었습니다.
-                <span>swiper를 이용하여 슬라이드를 구현하는 것에는 성공하였으나 원래 하고자 했던</span>
-                <span>2열 구현이 되지 않아 swiper 적용에 공부가 더 필요할 것 같습니다.</span>
-              </p>
-            </div>
-          </div>
-          <div class="contents">
-            <div class="txt">
-              <p class="title">넘치고 밀리는 컨텐츠</p>
-              <p>
-                컨텐츠와 폰트를 px로 작업한 후 확인하였을 때 컨텐츠가 넘치고
-                밀리는 현상이 발생하였습니다.
-                <span>단위 값을 vw, vh 또는 %로 작업하여 해결하였습니다.</span>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-  <footer>
-    <div class="review">
-      <h4>Review</h4>
-      <div class="review_txt">
+  <body>
+    <div class="mouse"></div>
+    <header>
+      <nav>
+        <ul id="menu">
+          <li>View project 01</li>
+          <li>
+            <a href="https://syewoni.github.io/myportfolio/"
+              >포트폴리오로 돌아가기</a
+            >
+          </li>
+        </ul>
+        <h1>Responsive Web</h1>
+        <h2>LX 하우시스</h2>
         <p>
-          처음으로 직접 디자인부터 퍼블리싱, JavaScript까지 적용해보며 반응형
-          웹사이트를 구현한 첫번째 프로젝트였습니다.
-          <span>html 구조와 css를 중간에 수정하느라 시간이 오래 소요되었지만,
-            퍼블리싱을 하며 완성되어가는 레이아웃을 보고</span>
-          <span>뿌듯함을 느껴볼 수 있었습니다.</span>
+          <span
+            >머무는 공간을 장식하는 인테리어 자재, 자동차 원단 및 경량화 부품 등
+            차별화된 기능과</span
+          >
+          <span>디자인으로 건강하고 아름다운 생활 공간을 제공하는 기업</span>
         </p>
-        <p class="closing">
-          이번 프로젝트에서 JavaScript를 처음 적용해보았는데 생각한대로
-          움직임이 이루어지지 않아 어려움을 겪기도 하였으나
-          <span>수많은 시도 끝에 움직임을 구현해볼 수 있었습니다.</span>
-          <span>아직 부족한 점이 많은 페이지이지만, 다음에는 더 완성도 있는
-            페이지를 완성해보고 싶다는 생각이 들었습니다</span>
-        </p>
+        <div class="lx">lx 하우시스 소개 이미지</div>
+      </nav>
+    </header>
+    <main>
+      <section id="top">
+        <h3>LX<span>HAUSYS</span></h3>
+        <div class="top_txt">
+          <div class="overview">
+            <h4>overview</h4>
+            <p class="title">LX 하우시스 홈페이지 리디자인</p>
+            <p>
+              국내 인테리어 자재 기업인 LX 하우시스의 홈페이지를 리디자인
+              하였습니다 기업 소개와 쇼핑몰이
+              <span
+                >분리되어 있던 페이지를 합쳐 주요 정보를 한페이지 안에서 확인할
+                수 있도록 스크롤 형태로 제작하였습니다.</span
+              >
+            </p>
+            <p class="sub">개인프로젝트 100%</p>
+            <p>작업기간 : 2022.07.04 ~ 07.19</p>
+          </div>
+          <div class="infor">
+            <h4>site information</h4>
+            <div class="infor_txt">
+              <p class="title">반응형 웹사이트</p>
+              <p>PC 1280px / Mobile 375px</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="middle">
+        <h3>Design</h3>
+        <div class="design">
+          <div class="keyword">
+            <div class="key_txt">
+              <h4>keyword</h4>
+              <p>
+                <span>#깔끔한</span><span>#직관적인</span><span>#간결한</span>
+              </p>
+            </div>
+            <p class="title">
+              기존 웹 사이트의 깔끔함은 유지하되, 주요 정보는 한 페이지 안에서
+              확인할 수 있도록 하였습니다.
+              <span
+                >LX 하우시스 기업의 아이덴티티를 잃지 않도록 직관적이고 간결하게
+                디자인하였습니다.</span
+              >
+            </p>
+          </div>
+          <div class="color">
+            <h4>Color</h4>
+            <div class="color_box title">
+              <div class="code">
+                <p>#f5f5f5</p>
+              </div>
+              <div class="code">
+                <p>#ff5519</p>
+              </div>
+              <div class="code">
+                <p>#1c1c1c</p>
+              </div>
+            </div>
+          </div>
+          <div class="font">
+            <h4>Typography</h4>
+            <p class="title">
+              가독성이 좋고 깔끔한 느낌을 전달하기 위해 Pretendard 서체를
+              사용하였습니다.
+            </p>
+            <ul id="font_box">
+              <li>Pretendard</li>
+              <li>Bold</li>
+              <li>가</li>
+              <li>Regular</li>
+              <li>가</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section id="bottom">
+        <h3>Web <span>Publishing</span></h3>
+        <div class="bottom_box">
+          <div class="publishing">
+            <h4>Publishing</h4>
+            <ul id="list">
+              <li>Chrome 브라우저 최적화</li>
+              <li>
+                어떤 환경에서도 적용한 폰트를 확인할 수 있도록 font.css를 사용한
+                웹 폰트 적용
+              </li>
+              <li>flex와 position을 사용한 레이아웃 구현</li>
+              <li>상단 메뉴 마우스 오버시 드롭다운 메뉴 구현</li>
+              <li>
+                디바이스의 제약 없이 사용할 수 있도록 미디어 쿼리를 이용한
+                반응형 웹 제작
+              </li>
+              <li>슬라이드 라이브러라 Swiper를 이용한 이미지 슬라이드</li>
+              <li>
+                vw 등 가변 단위 값을 이용한 사용자별 환경, 디바이스 제약 해결
+              </li>
+            </ul>
+          </div>
+          <div class="problem">
+            <h4>Problem & Solution</h4>
+            <div class="size txt">
+              <p class="title">
+                모바일 버전으로 확인했을 때의 다소 커다란 텍스트 크기
+              </p>
+              <p>
+                포토샵을 이용해 제작한 디자인 시안의 텍스트 크기를 그대로
+                적용하고 모바일 버전에서
+                <span
+                  >확인해보니, 폰트의 크기가 다소 커보이는 부분이 있어 폰트의
+                  사이즈를 다시 조절하였습니다.</span
+                >
+              </p>
+            </div>
+            <div class="img">
+              <div class="txt">
+                <p class="title">처음으로 swiper 적용해보기</p>
+                <p>
+                  제품소개를 슬라이드로 구현하고싶어 이것 저것 도전해보았으나
+                  적용에 어려움을 겪었습니다.
+                  <span
+                    >swiper를 이용하여 슬라이드를 구현하는 것에는 성공하였으나
+                    원래 하고자 했던</span
+                  >
+                  <span
+                    >2열 구현이 되지 않아 swiper 적용에 공부가 더 필요할 것
+                    같습니다.</span
+                  >
+                </p>
+              </div>
+            </div>
+            <div class="contents">
+              <div class="txt">
+                <p class="title">넘치고 밀리는 컨텐츠</p>
+                <p>
+                  컨텐츠와 폰트를 px로 작업한 후 확인하였을 때 컨텐츠가 넘치고
+                  밀리는 현상이 발생하였습니다.
+                  <span
+                    >단위 값을 vw, vh 또는 %로 작업하여 해결하였습니다.</span
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="review">
+        <h4>Review</h4>
+        <div class="review_txt">
+          <p>
+            처음으로 직접 디자인부터 퍼블리싱, JavaScript까지 적용해보며 반응형
+            웹사이트를 구현한 첫번째 프로젝트였습니다.
+            <span
+              >html 구조와 css를 중간에 수정하느라 시간이 오래 소요되었지만,
+              퍼블리싱을 하며 완성되어가는 레이아웃을 보고</span
+            >
+            <span>뿌듯함을 느껴볼 수 있었습니다.</span>
+          </p>
+          <p class="closing">
+            이번 프로젝트에서 JavaScript를 처음 적용해보았는데 생각한대로
+            움직임이 이루어지지 않아 어려움을 겪기도 하였으나
+            <span>수많은 시도 끝에 움직임을 구현해볼 수 있었습니다.</span>
+            <span
+              >아직 부족한 점이 많은 페이지이지만, 다음에는 더 완성도 있는
+              페이지를 완성해보고 싶다는 생각이 들었습니다</span
+            >
+          </p>
+        </div>
       </div>
-    </div>
-    <p class="view">
-      <a href="../../project/lxhausys/lxhausys.html" target="_blank">사이트 보러가기</a>
-    </p>
-  </footer>
-</body>
-
+      <p class="view">
+        <a href="../../project/lxhausys/lxhausys.html" target="_blank"
+          >사이트 보러가기</a
+        >
+      </p>
+    </footer>
+  </body>
 </html>
