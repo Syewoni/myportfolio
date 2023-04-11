@@ -109,3 +109,4 @@ slides.addEventListener('mouseenter', function () {
 slides.addEventListener('mouseleave', function () {
     autoSlide();
 });
+
