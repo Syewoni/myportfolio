@@ -321,7 +321,7 @@ header .background h2 {
   font-weight: bold;
   font-size: 3.4rem;
   text-align: center;
-  padding-top: 6vh;
+  padding-top: 10vh;
   position: relative;
   z-index: 10;
 }
@@ -351,7 +351,7 @@ header .background h2 {
 
 .message > p {
   text-align: left;
-  margin-top: 13vh;
+  margin-top: 4vh;
   margin-left: 10vw;
 }
 

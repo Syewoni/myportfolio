@@ -5,28 +5,9 @@
   background-color: #303030;
   color: #e1dfdd;
 }
-
-/* 스크롤바 */
-::-webkit-scrollbar {
-  width: 16px;
+html {
+  scroll-behavior: smooth;
 }
-
-::-webkit-scrollbar-thumb {
-  background-color: #247291;
-}
-
-/* 마우스 커서 */
-.mouse {
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  top: 10%;
-  left: 10%;
-  border: 2px solid #000;
-  border-radius: 50%;
-  z-index: 1000;
-}
-
 body {
   width: 100%;
   font-family: "NanumSquare";
@@ -470,6 +451,7 @@ main h3 {
 footer {
   background-color: #e1dfdd;
   color: #e1dfdd;
+  position: relative;
 }
 
 footer #review {
@@ -525,4 +507,24 @@ footer #review h2 {
 #review .view p:hover {
   background-color: #e1dfdd;
   color: #303030;
+}
+.scroll {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  z-index: 1000;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: #e1dfdd;
+}
+
+.scroll a {
+  color: #000;
+  font-size: 1.6rem;
+  display: block;
+  text-transform: uppercase;
+  /* margin: 0 auto; */
+  text-align: center;
+  line-height: 90px;
 }

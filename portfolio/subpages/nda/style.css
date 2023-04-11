@@ -6,25 +6,8 @@
   color: #e1dfdd;
 }
 
-/* 스크롤바 */
-::-webkit-scrollbar {
-  width: 16px;
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: #247291;
-}
-
-/* 마우스 커서 */
-.mouse {
-  position: absolute;
-  width: 30px;
-  height: 30px;
-  top: 10%;
-  left: 10%;
-  border: 2px solid #247291;
-  border-radius: 50%;
-  z-index: 1000;
+html {
+  scroll-behavior: smooth;
 }
 body {
   background-color: #e1dfdd;
@@ -304,6 +287,7 @@ main #middle {
 footer {
   /* background-color: #303030; */
   color: #fff;
+  position: relative;
 }
 
 footer h4 {
@@ -351,4 +335,24 @@ footer .view a:hover {
   background-color: #e1dfdd;
   color: #303030;
   font-weight: bold;
+}
+.scroll {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  z-index: 1000;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: #e1dfdd;
+}
+
+.scroll a {
+  color: #000;
+  font-size: 1.6rem;
+  display: block;
+  text-transform: uppercase;
+  /* margin: 0 auto; */
+  text-align: center;
+  line-height: 90px;
 }

@@ -25,6 +25,14 @@ $(document).ready(function () {
   $("#mc").mouseover(function () {
     $(".phone").attr("src", "./portfolio/mainpage/images/mc.png");
   });
+  // 룬느
+  $("#lunne").mouseover(function () {
+    $(".phone").attr("src", "./portfolio/mainpage/images/lunne.png");
+  });
+  // NDA
+  $("#nda").mouseover(function () {
+    $(".phone").attr("src", "./portfolio/mainpage/images/nda.png");
+  });
 
   // footer 메뉴 색상 변경
   $(window).scroll(function () {

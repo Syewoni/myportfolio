@@ -7,14 +7,14 @@
 }
 
 /* 스크롤바 */
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
   width: 16px;
 }
 
 ::-webkit-scrollbar-thumb {
   background-color: #303030;
   border-radius: 10px;
-}
+} */
 
 body {
   font-family: 'NanumSquare';
@@ -99,19 +99,16 @@ nav #gnb li a:after {
 
 nav #gnb li:nth-child(1) a:after {
   content: "";
-  /* width: 4.3vw; */
   left: 2px;
 }
 
 nav #gnb li:nth-child(2) a:after {
   content: "";
-  /* width: 4.5vw; */
   left: 8px;
 }
 
 nav #gnb li:nth-child(3) a:after {
   content: "";
-  /* width: 4.8vw; */
   left: 10px;
 }
 
@@ -138,7 +135,7 @@ nav #gnb li:nth-child(3):hover a:after {
   animation: ani_1 1.5s linear infinite alternate-reverse;
 }
 
-/* 硫붿씤?섏씠吏 ?붿궡???좊땲硫붿씠??*/
+/* 스크롤 애니메이션 */
 @keyframes ani_1 {
   100% {
     transform: translateY(30px);
@@ -190,7 +187,6 @@ main {
 
 .about_can #about_box1 h3 {
   padding-top: 40px;
-  /* width: 0%; */
 }
 
 #about h4 span {
@@ -208,10 +204,6 @@ main {
   font-weight: bold;
   text-transform: uppercase;
   padding-right: 300px;
-}
-
-#about_wrapper {
-  /* width: 60%; */
 }
 
 #about .about_can h3 span {
@@ -269,7 +261,7 @@ main {
 }
 
 #project_list .contents {
-  width: 60%;
+  width: 100%;
   margin: 35px 0;
   position: relative;
   border-bottom: 1px solid #000;
@@ -292,11 +284,9 @@ main {
 }
 
 .contents .intro {
-  /* width: 80%; */
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  /* padding: 0 40pxa; */
   position: relative;
 }
 
@@ -314,17 +304,11 @@ main {
 }
 
 .contents .contents_item {
-  /* width: 100%; */
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  /* padding: 0 40px; */
 }
 
-.contents a:hover .intro span,
-.contents a:hover .contents_item p {
-  /* color: #da7f81; */
-}
 
 .contents .contents_item p {
   font-family: "PP Neue Montreal";
@@ -336,7 +320,7 @@ main {
 
 .contents_item .tag {
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
 }
 
 .contents_item .tag span {
@@ -344,7 +328,6 @@ main {
   box-sizing: border-box;
   font-size: 16px;
   height: 37px;
-  /* width: 90%; */
   line-height: 30px;
   border: 1px solid #303030;
   border-radius: 5px;
@@ -360,13 +343,12 @@ main {
 #project .phone {
   width: 20%;
   text-indent: -9999px;
-  /* border: 1px solid #000; */
   float: right;
   margin-right: 100px;
+  margin-top: 10vh;
   position: sticky;
   top: 0;
 }
-
 /* contact */
 footer {
   padding: 60px 150px 40px;
@@ -388,7 +370,6 @@ footer {
 
 .contact_info h5 {
   font-size: 22px;
-  /* padding-bottom: 30px; */
 }
 
 .contact_info #profile,
@@ -467,40 +448,6 @@ footer {
   transition: 0.3s;
 }
 
-
-/* 마우스 커서 */
-/* .cursor {
-  display: none;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background-color: #000;
-
-  position: absolute;
-  left: 0;
-  top: 0;
-  z-index: 10000;
-
-} */
-
-.mouse {
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  top: 10%;
-  left: 10%;
-  border: 2px solid #000;
-  /* background-color: #F39820; */
-  /* border: 2.5px solid #F39820; */
-  border-radius: 50%;
-  z-index: 1000;
-}
-
-@keyframes cursor {
-  50% {
-    border-color: transparent;
-  }
-}
 
 .text {
   display: inline-block;

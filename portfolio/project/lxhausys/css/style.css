@@ -12,81 +12,150 @@ a {
   color: #000;
 }
 
-/* 헤더 */
-header .title {
-  padding: 15px 0;
+/* header 영역 */
+header {
   position: relative;
+  overflow: hidden;
 }
 
-header .title>a:nth-child(2) {
+/* 메뉴 */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+}
+
+nav h1 {
+  display: flex;
+}
+nav h1 img {
+  margin-left: 15%;
+}
+#check_box {
+  display: none;
+}
+
+#check_box + label {
+  position: relative;
+  display: block;
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+  z-index: 10000;
+  margin-right: 15px;
+}
+
+#check_box + label > span {
   position: absolute;
-  right: 5px;
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: #000;
+  border-radius: 5px;
+  transition: all 300ms;
 }
 
-header .title>a:nth-child(2) img {
-  width: 55%;
+#check_box:checked + label > span:nth-child(1) {
+  top: 50%;
+  transform: translate(0, -50%);
+  transform: rotate(45deg);
 }
 
-/* 햄버거 메뉴 */
-.wrapper{
-  width:100%;
-}
-.container{
-  width:100%;
-  border:1px solid #e1e1e1;
-}
-.head{
-  width:100%;
-  height:50px;
-  border-bottom:1px solid #e1e1e1;
-  position:relative;
-}
-.slide-open{
-  position:absolute;
-  top:0;
-  right:0;
-  width:50px;
-  height:50px;
-  cursor:pointer;
-}
-.burgur{
-right: 15px;
-top: 23px;
-position: absolute;
-width: 20px;
-height: 2px;
-background: #000000;
-}
-.burgur .top-line{
-width: 20px;
-height: 2px;
-background-color: #000000;
-bottom: -5px;
-content: '';
-position: absolute;
-right: 0;
-transition: transform .3s;
-
-}
-.burgur .bot-line {
-width: 20px;
-height: 2px;
-background-color: #000000;
-top: -5px;
-content: '';
-position: absolute;
-right: 0;
-transition: transform .3s;
+#check_box + label > span:nth-child(2) {
+  top: 50%;
+  transform: translate(0, -50%);
 }
 
-.burgur.on {
-width: 0;
+#check_box:checked + label > span:nth-child(2) {
+  opacity: 0;
 }
-.burgur.on .bot-line {
-transform: translateY(5px) rotate(135deg);
+
+#check_box + label > span:nth-child(3) {
+  bottom: 0;
 }
-.burgur.on .top-line{
-transform: translateY(-5px) rotate(-135deg);
+
+#check_box:checked + label > span:nth-child(3) {
+  top: 50%;
+  transform: translate(0, -50%);
+  transform: rotate(-45deg);
+}
+
+#side_menu {
+  position: absolute;
+  width: 400px;
+  height: 100%;
+  right: -400px;
+  transition: all 300ms;
+  z-index: 10;
+  top: 0px;
+  padding-top: 50.45px;
+  box-sizing: border-box;
+}
+#side_menu #menu {
+  padding-top: 7%;
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+}
+#side_menu li {
+  font-size: 24px;
+  font-weight: bold;
+  border-bottom: 1px solid #000;
+}
+nav #menu li a {
+  display: block;
+  padding:20px;
+}
+nav #menu li a:focus {
+  background-color: #E9E8E8;
+  border-bottom: 1px solid #373737;
+ }
+ 
+ nav #menu li {
+   text-align: left;
+   padding-left: 10px;
+ }
+ nav #menu .main_menu {
+   
+   border-bottom: 1px solid #373737;
+ }
+ nav #menu li a {
+   font-weight: bold;
+   font-size: 18px;
+ }
+ 
+ nav #menu li a img {
+   width: 25%;
+   vertical-align: baseline;
+ }
+ 
+ nav #menu li:last-child a img {
+   margin-bottom: 3px;
+ }
+ nav #menu li .sub_menu a {
+  font-size: 16px;
+}
+#side_menu li > .sub_menu {
+  display: none;
+}
+#side_menu li > .sub_menu li {
+  border: none;
+  font-size: 16px;
+}
+#side_menu li > .sub_menu li a {
+  padding-left: 10px;
+}
+#side_menu li:last-child {
+  border: none;
+}
+
+#side_menu li a {
+  display: block;
+}
+
+#check_box:checked + label + #side_menu {
+  right: 0;
 }
 /* 상단 로고 */
 .logo{
@@ -146,32 +215,8 @@ transform: translateY(-5px) rotate(-135deg);
 }
 
 /* 메뉴 */
-.slide{
-  width:100%;
-  position:absolute;
-  left:-100%;
-  top:0;
-  right:0;
-  bottom:0;
-  transition: left .3s;
-}
-.slide.on{
-  left:0;
-}
-.slide ul li{
-  display:inline-block;
-  width:100%;
-}
-nav #menu {
-  padding-top: 7%;
-  width: 100%;
-  height: 100vh;
-  background-color: #fff;
-}
-nav #menu li a {
-  display: block;
-  padding:20px;
-}
+
+/* 
 nav #menu li a:focus {
  background-color: #E9E8E8;
  border-bottom: 1px solid #373737;
@@ -196,12 +241,12 @@ nav #menu li a img {
 
 nav #menu li:last-child a img {
   margin-bottom: 3px;
-}
+}*/
 
 /* 소메뉴 */
-nav #menu li .sub_menu a {
+/* nav #menu li .sub_menu a {
   font-size: 16px;
-}
+}  */
 
 
 /* 컨텐츠 공통 */

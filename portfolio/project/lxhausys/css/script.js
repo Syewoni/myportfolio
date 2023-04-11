@@ -32,27 +32,11 @@ setInterval(function () {
 autoSlide();
 
 // 메뉴 슬라이드
- $(document).ready(function(){
-		$("nav ul.sub_menu").hide();
-		$("nav ul#menu li").click(function(){
-			$("ul",this).slideToggle("fast");
-		});
-	});
- 
-// 버튼클릭
- $(function(){
- 
- $("#slide-open").click(function()    {
-   if($("#burgur").hasClass('on')){
-     $("#burgur").removeClass('on');
-     $("#slide").removeClass('on');
-    
-   } else{
-     $("#burgur").addClass('on');
-    $("#slide").addClass('on'); 
-   }
- });
- 
+$(document).ready(function () {
+  $("#side_menu > ul > .sub_menu").hide();
+  $("#side_menu > ul > li").click(function () {
+    $("ul", this).slideToggle();
+  });
 });
    
 
@@ -120,7 +104,7 @@ function slideAct(){
 
     //보이는 슬라이드 개수 설정
     if (window.innerWidth > 768){ //PC 버전
-      view = 6;
+      view = 8;
     }else{ //mobile 버전
       view = 6;
     } 
